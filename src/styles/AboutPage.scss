@@ -1,0 +1,566 @@
+@import "App.scss";
+
+.about-page {
+  height: auto;
+  overflow: hidden;
+  background-color: $bright-background-color;
+
+  &__wrapper {
+    margin: 80px 100px 20px 100px;
+  }
+
+  &__author-info {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin: 50px 0 100px 0;
+  }
+
+  &__author-image {
+    min-width: 350px;
+    height: 350px;
+    margin-left: 100px;
+    border-radius: 50%;
+    background-image: url("/src/data/aboutImages/AleksandraMichalak.jpg");
+    background-size: cover;
+    background-position: center right;
+    overflow: hidden;
+  }
+
+  &__info-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 50px;
+  }
+
+  &__author-story {
+    margin-right: 100px;
+  }
+
+  &__work-section {
+    width: 100%;
+    margin-top: 100px;
+    padding: 0 100px 50px 100px;
+    background-color: #0a0a0a;
+    color: $bright-font-color;
+  }
+
+  &__work-section-title {
+    padding: 50px 0 20px 0;
+    text-align: center;
+  }
+
+  &__work-section-small-text {
+    color: $bright-font-color;
+    text-align: center;
+  }
+
+  &__work-section-wrapper {
+    display: flex;
+    height: auto;
+    margin: 100px 0;
+
+    &:nth-of-type(2) {
+      flex-flow: row-reverse;
+    }
+  }
+
+  &__work-section-image {
+    width: 800px;
+    height: 500px;
+  }
+
+  &__work-section-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-around;
+    margin-left: 50px;
+
+    &--middle {
+      margin-left: 0;
+      margin-right: 50px;
+    }
+  }
+
+  &__work-section-text {
+    color: $bright-font-color;
+    text-align: justify;
+  }
+}
+
+@media screen and (max-width: $xxxxlarge) and (orientation: landscape) {
+
+  .about-page {
+
+    &__wrapper {
+      margin: 80px 80px 20px 80px;
+    }
+
+    &__author-info {
+      margin: 20px 0 80px 0;
+    }
+
+    &__author-image {
+      min-width: 350px;
+      height: 350px;
+      margin-left: 80px;
+    }
+
+    &__author-story {
+      margin-right: 80px;
+    }
+
+    &__work-section {
+      margin-top: 80px;
+      padding: 0 80px 50px 80px;
+    }
+
+    &__work-section-wrapper {
+      margin: 80px 0;
+    }
+
+  }
+
+}
+
+@media screen and (max-width: $xxlarge) and (orientation: landscape) {
+
+  .about-page {
+
+    &__author-info {
+      margin: 30px 0 50px 0;
+    }
+
+    &__author-image {
+      min-width: 300px;
+      height: 300px;
+    }
+
+    &__work-section {
+      margin-top: 50px;
+    }
+
+    &__work-section-wrapper {
+      margin: 80px 0 50px 0;
+    }
+
+    &__work-section-image {
+      width: 600px;
+      height: 375px;
+    }
+
+  }
+}
+
+@media screen and (max-width: $xlarge) and (orientation: portrait) {
+
+  .about-page {
+
+    &__wrapper {
+      margin: 60px 50px 20px 50px;
+    }
+
+    &__author-info {
+      margin: 40px 0 50px 0;
+    }
+
+    &__author-image {
+      min-width: 250px;
+      height: 250px;
+      margin-left: 50px;
+    }
+
+    &__info-wrapper {
+      margin-left: 40px;
+    }
+
+    &__author-story {
+      margin-right: 50px;
+    }
+
+    &__work-section {
+      margin-top: 50px;
+      padding: 0 50px 40px 50px;
+    }
+
+    &__work-section-wrapper {
+      margin: 50px 0;
+    }
+
+    &__work-section-image {
+      width: 600px;
+      height: 375px;
+    }
+
+    &__work-section-text-wrapper {
+      margin-left: 40px;
+
+      &--middle {
+        margin-left: 0;
+        margin-right: 40px;
+      }
+    }
+
+  }
+}
+
+@media screen and (max-width: $large) and (orientation: landscape) {
+
+  .about-page {
+
+    &__wrapper {
+      margin: 60px 50px 20px 50px;
+    }
+
+    &__author-info {
+      margin: 40px 0 40px 0;
+    }
+
+    &__author-image {
+      min-width: 200px;
+      height: 200px;
+      margin-left: 50px;
+    }
+
+    &__info-wrapper {
+      margin-left: 40px;
+    }
+
+    &__author-story {
+      margin-right: 50px;
+    }
+
+    &__work-section {
+      margin-top: 40px;
+      padding: 0 50px 40px 50px;
+    }
+
+    &__work-section-title {
+      padding: 40px 0 20px 0;
+    }
+
+    &__work-section-wrapper {
+      margin: 50px 0;
+    }
+
+    &__work-section-image {
+      margin-top: 40px;
+      width: 400px;
+      height: 250px;
+    }
+
+    &__work-section-text-wrapper {
+      margin-left: 40px;
+
+      &--middle {
+        margin-left: 0;
+        margin-right: 40px;
+      }
+    }
+
+  }
+}
+
+@media screen and (max-width: $medium) and (orientation: landscape) and (orientation: portrait) {
+
+  .about-page {
+
+    &__wrapper {
+      margin: 60px 50px 20px 50px;
+    }
+
+    &__author-info {
+      margin: 20px 0 50px 0;
+    }
+
+    &__author-image {
+      min-width: 200px;
+      height: 200px;
+      margin-left: 0;
+    }
+
+    &__info-wrapper {
+      margin-left: 20px;
+    }
+
+    &__author-story {
+      margin-right: 0;
+    }
+
+    &__work-section {
+      margin-top: 50px;
+      padding: 0 50px 20px 50px;
+    }
+
+    &__work-section-wrapper {
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+      margin: 40px 0;
+
+      &:nth-of-type(2){
+        flex-direction: column-reverse;
+        margin: 40px 0;
+      }
+    }
+
+    &__work-section-image {
+      margin-top: 40px;
+      width: 400px;
+      height: 250px;
+    }
+
+    &__work-section-text-wrapper {
+      margin-left: 0;
+
+      &--middle {
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+
+  }
+}
+
+@media screen and (max-width: $medium) and (orientation: portrait) {
+
+  .about-page {
+
+    &__wrapper {
+      margin: 60px 50px 20px 50px;
+    }
+
+    &__author-info {
+      margin: 20px 0 50px 0;
+    }
+
+    &__author-image {
+      min-width: 200px;
+      height: 200px;
+      margin-left: 0;
+    }
+
+    &__info-wrapper {
+      margin-left: 20px;
+    }
+
+    &__author-story {
+      margin-right: 0;
+    }
+
+    &__work-section {
+      margin-top: 50px;
+      padding: 0 50px 20px 50px;
+    }
+
+    &__work-section-wrapper {
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+      margin: 40px 0;
+
+      &:nth-of-type(2){
+        flex-direction: column-reverse;
+        margin: 40px 0;
+      }
+    }
+
+    &__work-section-image {
+      margin-top: 40px;
+      width: 400px;
+      height: 250px;
+    }
+
+    &__work-section-text-wrapper {
+      margin-left: 0;
+
+      &--middle {
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+
+  }
+}
+
+@media screen and (max-width: $small) and (orientation: landscape) {
+
+  .about-page {
+
+    &__author-info {
+      margin-bottom: 40px;
+    }
+
+    &__author-image {
+      min-width: 180px;
+      height: 180px;
+      margin-top: 30px;
+    }
+
+    &__work-section {
+      margin-top: 40px;
+    }
+  }
+ }
+
+@media screen and (max-width: $small) and (orientation: portrait) {
+
+  .about-page {
+
+    &__author-info {
+      margin-bottom: 40px;
+    }
+
+    &__author-image {
+      min-width: 180px;
+      height: 180px;
+      margin-top: 30px;
+    }
+
+    &__work-section {
+      margin-top: 40px;
+    }
+  }
+ }
+
+@media screen and (max-width: $xsmall) and (orientation: landscape) {
+
+  .about-page {
+
+    &__wrapper {
+      margin: 60px 50px 20px 50px;
+    }
+
+    &__author-info {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 20px 0 40px 0;
+    }
+
+    &__author-image {
+      min-width: 200px;
+      height: 200px;
+      margin-left: 0;
+    }
+
+    &__info-wrapper {
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+      margin-left: 0;
+    }
+
+    &__author-story {
+      margin-right: 0;
+    }
+
+    &__work-section {
+      margin-top: 40px;
+      padding: 0 50px 20px 50px;
+    }
+
+    &__work-section-title {
+      padding: 40px 0 20px 0;
+    }
+
+    &__work-section-wrapper {
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+      margin: 40px 0;
+
+      &:nth-of-type(2) {
+        flex-flow: column-reverse;
+      }
+    }
+    &__work-section-image {
+      margin-top: 40px;
+      width: 300px;
+      height: 174.5px;
+    }
+
+    &__work-section-text-wrapper {
+      justify-content: center;
+      align-content: center;
+      margin-left: 0;
+
+      &--middle {
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $xsmall) and (orientation: portrait) {
+
+  .about-page {
+
+    &__wrapper {
+      margin: 60px 50px 20px 50px;
+    }
+
+    &__author-info {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 20px 0 40px 0;
+    }
+
+    &__author-image {
+      min-width: 200px;
+      height: 200px;
+      margin-left: 0;
+    }
+
+    &__info-wrapper {
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+      margin-left: 0;
+    }
+
+    &__author-story {
+      margin-right: 0;
+    }
+
+    &__work-section {
+      margin-top: 40px;
+      padding: 0 50px 20px 50px;
+    }
+
+    &__work-section-title {
+      padding: 40px 0 20px 0;
+    }
+
+    &__work-section-wrapper {
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+      margin: 40px 0;
+
+      &:nth-of-type(2) {
+        flex-flow: column-reverse;
+      }
+    }
+    &__work-section-image {
+      margin-top: 40px;
+      width: 316px;
+      height: 184.5px;
+    }
+
+    &__work-section-text-wrapper {
+      justify-content: center;
+      align-content: center;
+      margin-left: 0;
+
+      &--middle {
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+  }
+}

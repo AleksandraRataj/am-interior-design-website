@@ -1,0 +1,50 @@
+
+.dropdown-menu {
+  width: inherit;
+  position: absolute;
+  top: 90px;
+  list-style: none;
+  text-align: start;
+  background-color: #1f1f1f;
+
+  &--clicked {
+    display: none;
+  }
+
+  &__nav-link{
+    text-align: center;
+    margin: 0 0;
+    display: block;
+    font-size: 10px;
+    cursor: pointer;
+    height: auto;
+    width: 100%;
+    text-decoration: none;
+    color: #fff;
+
+    &:hover {
+      color: #5b81a2;
+    }
+  }
+}
+
+@media screen and (max-width: 1460px) {
+  .dropdown-menu {
+    top: 80px;
+  }
+}
+
+@media screen and (max-width: 1160px){
+  .dropdown-menu {
+    &__nav-link{
+      font-size: 7px;
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .fa-caret-down {
+    display: none;
+  }
+}
+

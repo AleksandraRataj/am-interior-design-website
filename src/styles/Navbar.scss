@@ -1,0 +1,258 @@
+@import 'App.scss';
+
+.navbar {
+  display: flex;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  height: 90px;
+  background-color: #151515;
+  opacity: 90%;
+
+  &__logo {
+    padding: 10px;
+    margin-left: 40px;
+  }
+
+  &__logo-img {
+    width: auto;
+    height: 70px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    width: 100%;
+    margin-right: 50px;
+    list-style: none;
+  }
+
+  $nav-link-font-size: 1.8rem;
+
+  &__nav-link {
+    width: auto;
+    padding: 0 30px;
+    text-align: center;
+    line-height: 90px;
+    color: white;
+    font-family: $main-font-family;
+    font-weight: 400;
+    font-size: $nav-link-font-size;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: .1s ease-in all;
+
+    &:hover {
+      background-color: $menu-color;
+    }
+  }
+
+  &__nav-link-realizations {
+    width: 170px;
+    text-align: center;
+    line-height: 90px;
+    color: white;
+    font-family: $main-font-family;
+    font-weight: 400;
+    font-size: $nav-link-font-size;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: .1s ease-in all;
+
+    &:hover {
+      background-color: $menu-color;
+    }
+
+    &-icon {
+      margin-left: 8px;
+      color: white;
+      font-size: 2rem;
+    }
+  }
+
+  &__div-hamburger-icon {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1460px) {
+
+  .navbar {
+    height: 80px;
+
+    &__logo-img {
+      height: 60px;
+    }
+
+    $nav-link-font-size: 1.3rem;
+
+    &__nav-link {
+      padding: 0 20px;
+      line-height: 80px;
+      font-size: $nav-link-font-size;
+    }
+
+    &__nav-link-realizations {
+      width: 140px;
+      line-height: 80px;
+      font-size: $nav-link-font-size;
+
+      &-icon {
+        margin-left: 6px;
+        color: white;
+        font-size: $nav-link-font-size;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1160px) and (orientation: landscape) {
+
+  .navbar {
+
+    $nav-link-font-size: 1.1rem;
+
+    &__nav-link {
+      padding: 0 10px;
+      font-size: $nav-link-font-size;
+    }
+
+    &__nav-link-realizations {
+      width: 110px;
+      font-size: $nav-link-font-size;
+
+      &-icon {
+        font-size: $nav-link-font-size;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+
+  .navbar {
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      width: 100%;
+      height: calc(100vh - 80px);
+      padding: 20px 0;
+      background-color: $menu-background-color;
+      opacity: 1;
+
+      position: absolute;
+      top: 80px;
+      left: -100%;
+      z-index: 1000;
+
+      transition: all 0.5s ease;
+
+      &--active {
+        left: 0;
+        width: 100%;
+
+        transition: all 0.5s ease;
+        z-index: 1000;
+      }
+    }
+
+    $nav-link-font-size: 1.8rem;
+
+    &__nav-link, &__nav-link-realizations {
+      position: relative;
+      left: 40px;
+      width: calc(100% - 90px);
+      height: 80px;
+      padding: 0 10px;
+      margin-right: 50px;
+      text-align: left;
+      line-height: 80px;
+      font-size: $nav-link-font-size;
+
+      &-icon {
+        display: none;
+      }
+    }
+
+    &__div-hamburger-icon {
+      display: block;
+      position: absolute;
+      top: 25px;
+      right: 50px;
+      z-index: 10000;
+    }
+
+    &__hamburger-icon {
+      color: white;
+      font-size: 3rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) and (orientation: portrait) {
+
+  .navbar {
+
+    $nav-link-font-size: 1.4rem;
+
+    &__nav-link {
+      padding: 0 10px;
+    }
+
+    &__nav-link, &__nav-link-realizations {
+      font-size: $nav-link-font-size;
+    }
+  }
+}
+
+@media screen and (max-width: 830px) and (orientation: landscape) {
+
+  .navbar {
+
+    &__list {
+      padding: 10px 0;
+    }
+
+    $nav-link-font-size: 1.6rem;
+
+    &__nav-link, &__nav-link-realizations {
+      height: 38px;
+      line-height: 38px;
+      font-size: $nav-link-font-size;
+    }
+  }
+}
+
+@media screen and (max-width: 570px) and (orientation: landscape) {
+
+  .navbar {
+
+    $nav-link-font-size: 1.4rem;
+
+    &__nav-link, &__nav-link-realizations {
+      height: 30px;
+      line-height: 30px;
+      font-size: $nav-link-font-size;
+    }
+  }
+}
+
+@media screen and (max-width: 360px) and (orientation: portrait) {
+
+  .navbar {
+
+    $nav-link-font-size: 1.6rem;
+
+    &__nav-link, &__nav-link-realizations {
+      height: 45px;
+      line-height: 45px;
+      font-size: $nav-link-font-size;
+    }
+  }
+}
+
