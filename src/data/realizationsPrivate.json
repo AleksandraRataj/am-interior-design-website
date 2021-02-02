@@ -1,0 +1,47 @@
+[
+  {
+    "id": 4,
+    "title": "Dom - Kraków",
+    "description": "Z wielką przyjemnością i dumą prezentujemy efekty sesji zdjęciowej naszej realizacji w Krakowie. Przestrzeń dzienna, do której prowadzą przeszklone drzwi w czarnej konstrukcji. w holu największe wrażenie robi tabeta firmy Skinwall, która nadaje ton całemu wnętrzu. Na jej tle pięknie wyglądają złote dodatki i lampy ze sklepu Si Home.",
+    "bannerImage": "/images/realizationsPrivate/realization1/img1.jpg",
+    "images": [
+      {"id": 0, "path": "/images/realizationsPrivate/realization1/img1.jpg"},
+      {"id": 1,"path": "/images/realizationsPrivate/realization1/img2.jpg"},
+      {"id": 2,"path": "/images/realizationsPrivate/realization1/img3.jpg"},
+      {"id": 3,"path": "/images/realizationsPrivate/realization1/img4.jpg"},
+      {"id": 4,"path": "/images/realizationsPrivate/realization1/img5.jpg"},
+      {"id": 5,"path": "/images/realizationsPrivate/realization1/img6.jpg"},
+      {"id": 6,"path": "/images/realizationsPrivate/realization1/img7.jpg"}
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Apartametn - Kraków",
+    "description": "Opis apartamentu, to co Ola chce o nim napisać.",
+    "bannerImage": "/images/img1.jpg",
+    "images": [
+      {"id": 0, "path": "/images/img1.jpg"},
+      {"id": 1,"path": "/images/img2.jpg"},
+      {"id": 2,"path": "/images/img3.jpg"}
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Apartametn - Nowy Sącz",
+    "description": "Opis apartamentu, to co Ola chce o nim napisać.",
+    "bannerImage": "/images/img2.jpg",
+    "images": [
+      {"id": 0, "path": "/images/img1.jpg"}
+    ]
+  },
+  {
+    "id": 1,
+    "title": "Apartametn - Warszawa",
+    "description": "Opis apartamentu, to co Ola chce o nim napisać.",
+    "bannerImage": "./images/img3.jpg",
+    "images": [
+      {"id": 0,"path": "/images/img1.jpg"},
+      {"id": 0,"path": "/images/img3.jpg"}
+    ]
+  }
+]

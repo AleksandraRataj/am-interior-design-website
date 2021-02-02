@@ -1,0 +1,45 @@
+[
+  {
+    "id": 3,
+    "title": "Pensjonat - Żmiąca",
+    "description": "Projekt i realizacja wnętrz w Osadzie Konnej Assanya - pensjonat. Projekt obejmował recepcje, restauracje, pub i pokoje hotelowe wraz z łazienkami. Obiekt sąsiaduje z halą jeździecką z przeznaczeniem na przyjmowanie gości, jak również organizacje imprez okolicznościowych. Wysoki standard pokoi zadowoli najbardziej wymagających gości. Wśród wykładzin i mebli projektowanych pod wymiar, każdy poczuje się komfortowo.",
+    "bannerImage": "/images/realizationsPublic/img1.jpg",
+    "images": [
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Hala Jeździecka - Żmiąca",
+    "description": "Projekt i realizacja wnętrz w Osadzie Konnej Assanya - hala jeździecka. Projekt obejmował recepcje, restauracje i pokoje hotelowe. Oprócz nawiązań do głównych bohaterów tego miejsca - koni, ważnym aspektem przy opracowaniu projektu był regionalizm, naturalne materiały i mocne kolory - przyjazne dla najmłodszych gości Osady Konnej.",
+    "bannerImage": "/images/realizationsPublic/img1.jpg",
+    "images": [
+
+    ]
+  },
+  {
+    "id": 1,
+    "title": "Barber House - Kraków",
+    "description": "Udało nam się uwiecznić barberów podczas pracy i jednocześnie pokazać wnętrza lokalu naszego projektu. Zaczynając współpracę z inwestorami dostaliśmy podstawowe wytyczne - ma być surowo, męsko i industrialnie. Efekt osiągnięty więc pozostaje zaprosić wszystkich mężczyzn, nie tylko brodatych do tego klimatycznego miejsca jakim jest Barber House przy ul. Św. Tomasza w Krakowie.",
+    "bannerImage": "/images/realizationsPublic/img14.jpg",
+    "images": [
+      {"id": 0, "path": "/images/realizationsPublic/img1.jpg"},
+      {"id": 1, "path": "/images/realizationsPublic/img2.jpg"},
+      {"id": 2, "path": "/images/realizationsPublic/img3.jpg"},
+      {"id": 3, "path": "/images/realizationsPublic/img4.jpg"},
+      {"id": 4, "path": "/images/realizationsPublic/img5.jpg"},
+      {"id": 5, "path": "/images/realizationsPublic/img6.jpg"},
+      {"id": 6, "path": "/images/realizationsPublic/img7.jpg"},
+      {"id": 7, "path": "/images/realizationsPublic/img8.jpg"},
+      {"id": 8, "path": "/images/realizationsPublic/img9.jpg"},
+      {"id": 9, "path": "/images/realizationsPublic/img10.jpg"},
+      {"id": 10, "path": "/images/realizationsPublic/img11.jpg"},
+      {"id": 11, "path": "/images/realizationsPublic/img12.jpg"},
+      {"id": 12, "path": "/images/realizationsPublic/img13.jpg"},
+      {"id": 13, "path": "/images/realizationsPublic/img14.jpg"},
+      {"id": 14, "path": "/images/realizationsPublic/img15.jpg"},
+      {"id": 15, "path": "/images/realizationsPublic/img16.jpg"},
+      {"id": 16, "path": "/images/realizationsPublic/img17.jpg"}
+    ]
+  }
+
+]
