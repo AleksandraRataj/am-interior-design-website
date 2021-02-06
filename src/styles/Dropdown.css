@@ -1,27 +1,5 @@
-//imports
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,300&display=swap');
-
-//variables
-$menu-background-color: #151515;
-$menu-color: #5b81a2;
-$main-font-family: "Poppins", "Lato", "Open Sans", "sans-serif";
-$main-font-size: 10px;
-$bright-background-color: #EEEEEE;
-$dark-background-color: #0a0a0a;
-$bright-font-color: #FBF7EA;
-$button-color: #FFF3C7;
-
-//media queries breakpoints
-$xsmall: 460px;
-$small: 640px;
-$medium: 823px;
-$large: 1024px;
-$xlarge: 1200px;
-$xxlarge: 1440px;
-$xxxlarge: 1600px;
-$xxxxlarge: 1920px;
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,300&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -34,12 +12,12 @@ html {
 }
 
 body {
-  font-size: $main-font-size;
+  font-size: 10px;
 }
 
 .page-title {
   padding-top: 40px;
-  font-family: $main-font-family;
+  font-family: "Poppins", "Lato", "Open Sans", "sans-serif";
   font-size: 3.6rem;
   font-weight: 500;
   text-transform: uppercase;
@@ -48,26 +26,26 @@ body {
 }
 
 .title {
-  font-family: $main-font-family;
+  font-family: "Poppins", "Lato", "Open Sans", "sans-serif";
   font-size: 3.4rem;
 }
 
 .subtitle {
-  font-family: $main-font-family;
+  font-family: "Poppins", "Lato", "Open Sans", "sans-serif";
   font-size: 3rem;
   font-weight: 500;
   margin-bottom: 10px;
 }
 
 .text {
-  font-family: $main-font-family;
+  font-family: "Poppins", "Lato", "Open Sans", "sans-serif";
   font-size: 1.9rem;
   font-weight: 400;
   line-height: 32px;
 }
 
 .small-text {
-  font-family: $main-font-family;
+  font-family: "Poppins", "Lato", "Open Sans", "sans-serif";
   font-size: 1.4rem;
   font-weight: 400;
 }
@@ -78,28 +56,24 @@ body {
   margin: 10px;
   border-radius: 45px;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
-  background-color: $button-color;
-  color: $dark-background-color;
+  background-color: #FFF3C7;
+  color: #0a0a0a;
   cursor: pointer;
-  font-family: $main-font-family;
+  font-family: "Poppins", "Lato", "Open Sans", "sans-serif";
   font-size: 13px;
   font-weight: 500;
   text-align: center;
   text-decoration: none;
-  //text-transform: uppercase;
   line-height: 40px;
-  transition: all .2s ease-in-out 0s;
-
-  &:hover{
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
-    color: $bright-font-color;
-    background-color: $dark-background-color;
-  }
-
+  transition: all 0.2s ease-in-out 0s;
+}
+.button:hover {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  color: #FBF7EA;
+  background-color: #0a0a0a;
 }
 
-@media screen and (max-width: ($xxxxlarge))  and (orientation: landscape){
-
+@media screen and (max-width: 1920px) and (orientation: landscape) {
   .title {
     font-size: 3.2rem;
   }
@@ -117,9 +91,7 @@ body {
     font-size: 1.4rem;
   }
 }
-
-@media screen and (max-width: ($xxxxlarge))  and (orientation: portrait){
-
+@media screen and (max-width: 1920px) and (orientation: portrait) {
   .title {
     font-size: 3.2rem;
   }
@@ -136,11 +108,8 @@ body {
   .small-text {
     font-size: 1.4rem;
   }
-
 }
-
-@media screen and (max-width: ($xxxlarge))  and (orientation: landscape){
-
+@media screen and (max-width: 1600px) and (orientation: landscape) {
   .page-title {
     font-size: 3.4rem;
   }
@@ -157,11 +126,8 @@ body {
     font-size: 1.8rem;
     line-height: 28px;
   }
-
 }
-
-@media screen and (max-width: ($xxxlarge))  and (orientation: portrait){
-
+@media screen and (max-width: 1600px) and (orientation: portrait) {
   .page-title {
     font-size: 3.4rem;
   }
@@ -178,11 +144,8 @@ body {
     font-size: 1.8rem;
     line-height: 28px;
   }
-
 }
-
-@media screen and (max-width: ($xxlarge))  and (orientation: landscape){
-
+@media screen and (max-width: 1440px) and (orientation: landscape) {
   .page-title {
     font-size: 3.2rem;
   }
@@ -203,11 +166,8 @@ body {
   .small-text {
     font-size: 1.3rem;
   }
-
 }
-
-@media screen and (max-width: ($xxlarge))  and (orientation: portrait){
-
+@media screen and (max-width: 1440px) and (orientation: portrait) {
   .page-title {
     font-size: 3.2rem;
   }
@@ -228,44 +188,8 @@ body {
   .small-text {
     font-size: 1.3rem;
   }
-
 }
-
-@media screen and (max-width: ($xlarge)) and (orientation: landscape){
-
-  .page-title {
-    font-size: 3rem;
-  }
-
-  .title {
-    font-size: 2.6rem;
-  }
-
-  .subtitle {
-    font-size: 2.4rem;
-  }
-
-  .text {
-    font-size: 1.4rem;
-    line-height: 20px;
-  }
-
-  .small-text {
-    font-size: 1.2rem;
-  }
-
-  .button {
-    width: 120px;
-    height: 40px;
-    margin: 8px;
-    font-size: 12px;
-    line-height: 40px;
-  }
-
-}
-
-@media screen and (max-width: ($xlarge)) and (orientation: portrait){
-
+@media screen and (max-width: 1200px) and (orientation: landscape) {
   .page-title {
     font-size: 3rem;
   }
@@ -295,9 +219,37 @@ body {
     line-height: 40px;
   }
 }
+@media screen and (max-width: 1200px) and (orientation: portrait) {
+  .page-title {
+    font-size: 3rem;
+  }
 
-@media screen and (max-width: ($large))  and (orientation: landscape){
+  .title {
+    font-size: 2.6rem;
+  }
 
+  .subtitle {
+    font-size: 2.4rem;
+  }
+
+  .text {
+    font-size: 1.4rem;
+    line-height: 20px;
+  }
+
+  .small-text {
+    font-size: 1.2rem;
+  }
+
+  .button {
+    width: 120px;
+    height: 40px;
+    margin: 8px;
+    font-size: 12px;
+    line-height: 40px;
+  }
+}
+@media screen and (max-width: 1024px) and (orientation: landscape) {
   .page-title {
     font-size: 2.8rem;
   }
@@ -318,11 +270,8 @@ body {
   .small-text {
     font-size: 1.1rem;
   }
-
 }
-
-@media screen and (max-width: ($large))  and (orientation: portrait){
-
+@media screen and (max-width: 1024px) and (orientation: portrait) {
   .page-title {
     font-size: 2.8rem;
   }
@@ -343,11 +292,8 @@ body {
   .small-text {
     font-size: 1.1rem;
   }
-
 }
-
-@media screen and (max-width: ($medium))  and (orientation: landscape){
-
+@media screen and (max-width: 823px) and (orientation: landscape) {
   .page-title {
     font-size: 2.6rem;
   }
@@ -368,11 +314,8 @@ body {
   .small-text {
     font-size: 1rem;
   }
-
 }
-
-@media screen and (max-width: ($medium))  and (orientation: portrait){
-
+@media screen and (max-width: 823px) and (orientation: portrait) {
   .page-title {
     font-size: 2.6rem;
   }
@@ -393,35 +336,8 @@ body {
   .small-text {
     font-size: 1rem;
   }
-
 }
-
-@media screen and (max-width: ($small))  and (orientation: landscape){
-
-  .page-title {
-    font-size: 2.4rem;
-  }
-
-  .title {
-    font-size: 2rem;
-  }
-
-  .subtitle {
-    font-size: 1.8rem;
-  }
-
-  .button {
-    width: 110px;
-    height: 35px;
-    margin: 8px;
-    font-size: 11px;
-    line-height: 35px;
-  }
-
-}
-
-@media screen and (max-width: ($small))  and (orientation: portrait){
-
+@media screen and (max-width: 640px) and (orientation: landscape) {
   .page-title {
     font-size: 2.4rem;
   }
@@ -442,9 +358,28 @@ body {
     line-height: 35px;
   }
 }
+@media screen and (max-width: 640px) and (orientation: portrait) {
+  .page-title {
+    font-size: 2.4rem;
+  }
 
-@media screen and (max-width: ($xsmall))  and (orientation: landscape){
+  .title {
+    font-size: 2rem;
+  }
 
+  .subtitle {
+    font-size: 1.8rem;
+  }
+
+  .button {
+    width: 110px;
+    height: 35px;
+    margin: 8px;
+    font-size: 11px;
+    line-height: 35px;
+  }
+}
+@media screen and (max-width: 460px) and (orientation: landscape) {
   .page-title {
     font-size: 2.2rem;
   }
@@ -456,11 +391,8 @@ body {
   .subtitle {
     font-size: 1.7rem;
   }
-
 }
-
-@media screen and (max-width: ($xsmall))  and (orientation: portrait){
-
+@media screen and (max-width: 460px) and (orientation: portrait) {
   .page-title {
     font-size: 2.2rem;
   }
@@ -472,20 +404,50 @@ body {
   .subtitle {
     font-size: 1.7rem;
   }
-
+}
+.dropdown-menu {
+  width: inherit;
+  position: absolute;
+  top: 90px;
+  list-style: none;
+  text-align: start;
+  background-color: #1f1f1f;
+}
+.dropdown-menu--clicked {
+  display: none;
+}
+.dropdown-menu__nav-link {
+  text-align: center;
+  margin: 0 0;
+  display: block;
+  font-size: 10px;
+  cursor: pointer;
+  height: auto;
+  width: 100%;
+  text-decoration: none;
+  color: #fff;
+}
+.dropdown-menu__nav-link:hover {
+  color: #5b81a2;
 }
 
+@media screen and (max-width: 1440px) and (orientation: landscape) {
+  .dropdown-menu {
+    top: 90px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .dropdown-menu {
+    top: 80px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .dropdown-menu {
+    top: 70px;
+  }
+  .dropdown-menu__nav-link {
+    font-size: 7px;
+  }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*# sourceMappingURL=Dropdown.css.map */

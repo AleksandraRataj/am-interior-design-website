@@ -37,25 +37,7 @@
     line-height: 90px;
     color: white;
     font-family: $main-font-family;
-    font-weight: 400;
-    font-size: $nav-link-font-size;
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    transition: .1s ease-in all;
-
-    &:hover {
-      background-color: $menu-color;
-    }
-  }
-
-  &__nav-link-realizations {
-    width: 170px;
-    text-align: center;
-    line-height: 90px;
-    color: white;
-    font-family: $main-font-family;
-    font-weight: 400;
+    font-weight: 500;
     font-size: $nav-link-font-size;
     text-decoration: none;
     text-transform: uppercase;
@@ -66,10 +48,28 @@
       background-color: $menu-color;
     }
 
-    &-icon {
-      margin-left: 8px;
+    &--realizations {
+      width: 170px;
+      text-align: center;
+      line-height: 90px;
       color: white;
-      font-size: 2rem;
+      font-family: $main-font-family;
+      font-weight: 500;
+      font-size: $nav-link-font-size;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      transition: .1s ease-in all;
+
+      &:hover {
+        background-color: $menu-color;
+      }
+
+      &-icon {
+        margin-left: 8px;
+        color: white;
+        font-size: 2rem;
+      }
     }
   }
 
@@ -78,7 +78,53 @@
   }
 }
 
-@media screen and (max-width: 1460px) {
+@media screen and (max-width: $xxxlarge) and (orientation: landscape) {
+
+  .navbar {
+
+    $nav-link-font-size: 1.7rem;
+
+    &__nav-link {
+      padding: 0 25px;
+      font-size: $nav-link-font-size;
+
+      &--realizations {
+        width: 160px;
+        font-size: $nav-link-font-size;
+
+        &-icon {
+          margin-left: 7px;
+        }
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: $xxlarge) {
+
+  .navbar {
+
+    $nav-link-font-size: 1.5rem;
+
+    &__nav-link {
+      padding: 0 18px;
+      font-size: $nav-link-font-size;
+
+      &--realizations {
+        width: 155px;
+        font-size: $nav-link-font-size;
+
+        &-icon {
+          margin-left: 6px;
+        }
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: $xlarge) {
 
   .navbar {
     height: 80px;
@@ -87,63 +133,68 @@
       height: 60px;
     }
 
-    $nav-link-font-size: 1.3rem;
+    $nav-link-font-size: 1.2rem;
 
     &__nav-link {
-      padding: 0 20px;
-      line-height: 80px;
-      font-size: $nav-link-font-size;
-    }
-
-    &__nav-link-realizations {
-      width: 140px;
+      padding: 0 13px;
       line-height: 80px;
       font-size: $nav-link-font-size;
 
-      &-icon {
-        margin-left: 6px;
-        color: white;
+      &--realizations {
+        width: 142px;
+        line-height: 80px;
         font-size: $nav-link-font-size;
+
+        &-icon {
+          margin-left: 6px;
+          font-size: 1.7rem;
+        }
       }
     }
   }
 }
 
-@media screen and (max-width: 1160px) and (orientation: landscape) {
+@media screen and (max-width: $large) and (orientation: landscape) {
 
   .navbar {
+    height: 70px;
 
-    $nav-link-font-size: 1.1rem;
-
-    &__nav-link {
-      padding: 0 10px;
-      font-size: $nav-link-font-size;
+    &__logo-img {
+      height: 54px;
     }
 
-    &__nav-link-realizations {
-      width: 110px;
+    $nav-link-font-size: 1rem;
+
+    &__nav-link {
+      padding: 0 8px;
+      line-height: 70px;
       font-size: $nav-link-font-size;
 
-      &-icon {
+      &--realizations {
+        width: 120px;
+        line-height: 70px;
         font-size: $nav-link-font-size;
+
+        &-icon {
+          margin-left: 4px;
+          font-size: 1.2rem;
+        }
       }
     }
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: $large) and (orientation: portrait) {
 
   .navbar {
 
     &__list {
-      display: flex;
       flex-direction: column;
       justify-content: flex-start;
       width: 100%;
       height: calc(100vh - 80px);
       padding: 20px 0;
       background-color: $menu-background-color;
-      opacity: 1;
 
       position: absolute;
       top: 80px;
@@ -161,12 +212,12 @@
       }
     }
 
-    $nav-link-font-size: 1.8rem;
+    $nav-link-font-size: 2rem;
 
-    &__nav-link, &__nav-link-realizations {
+    &__nav-link, &__nav-link--realizations {
       position: relative;
       left: 40px;
-      width: calc(100% - 90px);
+      width: calc(100% - 80px);
       height: 80px;
       padding: 0 10px;
       margin-right: 50px;
@@ -192,67 +243,106 @@
       font-size: 3rem;
     }
   }
+
 }
 
-@media screen and (max-width: 1024px) and (orientation: portrait) {
+@media screen and (max-width: 868px) and (orientation: landscape){
 
   .navbar {
+    height: 60px;
 
-    $nav-link-font-size: 1.4rem;
-
-    &__nav-link {
-      padding: 0 10px;
+    &__logo-img {
+      height: 44px;
     }
-
-    &__nav-link, &__nav-link-realizations {
-      font-size: $nav-link-font-size;
-    }
-  }
-}
-
-@media screen and (max-width: 830px) and (orientation: landscape) {
-
-  .navbar {
 
     &__list {
-      padding: 10px 0;
+      flex-direction: column;
+      justify-content: flex-start;
+      width: 100%;
+      height: calc(100vh - 60px);
+      padding: 8px 0;
+      background-color: $menu-background-color;
+
+      position: absolute;
+      top: 60px;
+      left: -100%;
+      z-index: 1000;
+
+      transition: all 0.5s ease;
+
+      &--active {
+        left: 0;
+        width: 100%;
+
+        transition: all 0.5s ease;
+        z-index: 1000;
+      }
+    }
+
+    $nav-link-font-size: 1.2rem;
+
+    &__nav-link, &__nav-link--realizations {
+      position: relative;
+      left: 40px;
+      width: calc(100% - 80px);
+      height: 31px;
+      padding: 0 10px;
+      margin-right: 50px;
+      text-align: left;
+      line-height: 31px;
+      font-size: $nav-link-font-size;
+
+      &-icon {
+        display: none;
+      }
+    }
+
+    &__div-hamburger-icon {
+      display: block;
+      position: absolute;
+      top: 17.2px;
+      right: 50px;
+      z-index: 10000;
+    }
+
+    &__hamburger-icon {
+      color: white;
+      font-size: 2.6rem;
+    }
+  }
+}
+
+
+@media screen and (max-width: $medium) and (orientation: portrait) {
+
+  .navbar {
+    height: 60px;
+
+    &__logo-img {
+      height: 44px;
+    }
+
+    &__list {
+      height: calc(100vh - 60px);
+      top: 59px;
     }
 
     $nav-link-font-size: 1.6rem;
 
-    &__nav-link, &__nav-link-realizations {
-      height: 38px;
-      line-height: 38px;
+    &__nav-link, &__nav-link--realizations {
+      height: 50px;
+      line-height: 50px;
       font-size: $nav-link-font-size;
+    }
+
+    &__div-hamburger-icon {
+      top: 16px;
+    }
+
+    &__hamburger-icon {
+      font-size: 2.6rem;
     }
   }
 }
 
-@media screen and (max-width: 570px) and (orientation: landscape) {
-
-  .navbar {
-
-    $nav-link-font-size: 1.4rem;
-
-    &__nav-link, &__nav-link-realizations {
-      height: 30px;
-      line-height: 30px;
-      font-size: $nav-link-font-size;
-    }
-  }
-}
-
-@media screen and (max-width: 360px) and (orientation: portrait) {
-
-  .navbar {
-
-    $nav-link-font-size: 1.6rem;
-
-    &__nav-link, &__nav-link-realizations {
-      height: 45px;
-      line-height: 45px;
-      font-size: $nav-link-font-size;
-    }
-  }
-}
 

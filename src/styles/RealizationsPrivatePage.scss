@@ -1,0 +1,98 @@
+@import "App.scss";
+
+$image-width-landscape: calc(100vw * 0.62);
+
+
+.realizations-private-page{
+
+  height: auto;
+  overflow: hidden;
+  background-color: $bright-background-color;
+
+  &__wrapper{
+    margin: 90px 200px 30px 200px;
+  }
+
+  &__page-title{
+    margin-bottom: 30px;
+  }
+
+  &__element-wrapper{
+    display: flex;
+    position: relative;
+    width: 100%;
+
+    &:nth-of-type(odd){
+      flex-direction: row;
+
+      .realizations-private-page__element-wrapper--info{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: #C6C6C6;
+        width: 400px;
+        height: 500px;
+        bottom: 0;
+        right: 0;
+
+        -webkit-box-shadow: -1px -1px 5px 0px rgba(50, 50, 50, 0.5);
+        -moz-box-shadow:    -1px -1px 5px 0px rgba(50, 50, 50, 0.5);
+        box-shadow:         -1px -1px 5px 0px rgba(50, 50, 50, 0.5);
+
+        .realizations-private-page__button{
+          justify-self: right;
+          align-self: flex-end;
+          margin: 20px;
+        }
+      }
+    }
+
+    &:nth-of-type(even){
+      flex-direction: row-reverse;
+      justify-content: flex-start;
+      align-content: flex-start;
+
+      .realizations-private-page__element-wrapper--info{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: #C6C6C6;
+        width: 400px;
+        height: 500px;
+        bottom: 0;
+        left: 0;
+
+        -webkit-box-shadow: 1px -1px 5px 0px rgba(50, 50, 50, 0.5);
+        -moz-box-shadow:    1px -1px 5px 0px rgba(50, 50, 50, 0.5);
+        box-shadow:         1px -1px 5px 0px rgba(50, 50, 50, 0.5);
+
+        .realizations-private-page__button{
+          justify-self: left;
+          align-self: flex-start;
+          margin: 20px;
+        }
+      }
+    }
+  }
+
+  &__title{
+    margin: 15px auto;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+
+  &__description{
+    flex-grow: 2;
+    margin: 15px 20px;
+    font-size: 16px !important;
+    text-align: justify;
+  }
+
+  &__element-image{
+    width: $image-width-landscape;
+    height: auto;
+  }
+
+}

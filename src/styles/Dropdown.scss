@@ -1,3 +1,5 @@
+@import "App.scss";
+
 
 .dropdown-menu {
   width: inherit;
@@ -28,23 +30,23 @@
   }
 }
 
-@media screen and (max-width: 1460px) {
+@media screen and (max-width: $xxlarge) and (orientation: landscape){
+  .dropdown-menu {
+    top: 90px;
+  }
+}
+
+@media screen and (max-width: $xlarge){
   .dropdown-menu {
     top: 80px;
   }
 }
 
-@media screen and (max-width: 1160px){
+@media screen and (max-width: $large){
   .dropdown-menu {
+    top: 70px;
     &__nav-link{
       font-size: 7px;
     }
   }
 }
-
-@media screen and (max-width: 960px) {
-  .fa-caret-down {
-    display: none;
-  }
-}
-
