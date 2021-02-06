@@ -16,7 +16,7 @@ export const Navbar = (props) => {
     const [dropdown, setDropdown] = useState(false);
 
     let handleMouseEnter = () => {
-        if(window.innerWidth < 960) {
+        if(window.innerWidth < 868) {
             setDropdown(false);
         } else {
             setDropdown(true);
@@ -24,7 +24,7 @@ export const Navbar = (props) => {
     }
 
     const handleMouseLeave = () => {
-        if(window.innerWidth < 960) {
+        if(window.innerWidth < 868) {
            setDropdown(false);
         } else {
            setDropdown(false);
@@ -40,14 +40,14 @@ export const Navbar = (props) => {
             <NavLink
                 key={index}
                 as={NavLink}
-                className={item.name === 'realizacje' ? "navbar__nav-link-realizations" : "navbar__nav-link"}
+                className={item.name === 'realizacje' ? "navbar__nav-link--realizations" : "navbar__nav-link"}
                 to={item.path}
                 exact={true}
                 onMouseLeave={ item.name === 'realizacje' ? handleMouseLeave : null}
                 onMouseEnter={ item.name === 'realizacje' ? handleMouseEnter : null}
             >
                 {item.name}
-                {item.name === 'realizacje' ? <i className='fas fa-caret-down navbar__nav-link-realizations-icon'/> : null}
+                {item.name === 'realizacje' ? <i className='fas fa-caret-down navbar__nav-link--realizations-icon'/> : null}
                 {dropdown && <Dropdown subMenuItems={item.subMenuItems}/>}
             </NavLink>
         );
