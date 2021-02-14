@@ -13,14 +13,12 @@
     display: flex;
     width: 100%;
     height: auto;
-    margin: 50px 0 100px 0;
+    margin: 60px 0 100px 0;
   }
 
   &__author-image {
-    min-width: 350px;
-    height: 350px;
-    margin-left: 100px;
-    border-radius: 50%;
+    min-width: 325px;
+    height: 325px;
     background-image: url("/src/data/images/AleksandraMichalak.jpg");
     background-size: cover;
     background-position: center right;
@@ -35,7 +33,6 @@
   }
 
   &__author-story {
-    margin-right: 100px;
     text-align: justify;
   }
 
@@ -45,7 +42,7 @@
 
   &__work-section {
     width: 100%;
-    margin-top: 100px;
+    margin-top: 50px;
     padding: 0 100px 50px 100px;
     background-color: #0a0a0a;
     color: $bright-font-color;
@@ -72,8 +69,9 @@
   }
 
   &__work-section-image {
-    width: 800px;
-    height: 500px;
+    width: 700px;
+    height: auto;
+    max-width: 100%;
   }
 
   &__work-section-text-wrapper {
@@ -103,26 +101,45 @@
     }
 
     &__author-info {
-      margin: 20px 0 80px 0;
-    }
-
-    &__author-image {
-      min-width: 350px;
-      height: 350px;
-      margin-left: 80px;
-    }
-
-    &__author-story {
-      margin-right: 80px;
+      margin: 50px 0 50px 0;
     }
 
     &__work-section {
       margin-top: 80px;
-      padding: 0 80px 50px 80px;
+      padding: 0 180px 50px 180px;
     }
 
     &__work-section-wrapper {
       margin: 80px 0;
+    }
+
+  }
+
+}
+
+@media screen and (max-width: $xxxlarge) and (orientation: landscape) {
+
+  .about-page {
+
+    &__wrapper {
+      margin: 80px 80px 20px 80px;
+    }
+
+    &__author-info {
+      margin: 50px 0 50px 0;
+    }
+
+    &__work-section {
+      margin-top: 80px;
+      padding: 0 150px 50px 150px;
+    }
+
+    &__work-section-wrapper {
+      margin: 80px 0;
+    }
+
+    &__work-section-image {
+      width: 600px;
     }
 
   }
@@ -138,12 +155,13 @@
     }
 
     &__author-image {
-      min-width: 300px;
-      height: 300px;
+      min-width: 280px;
+      height: 280px;
     }
 
     &__work-section {
       margin-top: 50px;
+      padding: 0 80px 50px 80px;
     }
 
     &__work-section-wrapper {
@@ -151,14 +169,13 @@
     }
 
     &__work-section-image {
-      width: 600px;
-      height: 375px;
+      width: 500px;
     }
 
   }
 }
 
-@media screen and (max-width: $xlarge) and (orientation: portrait) {
+@media screen and (max-width: $xlarge) {
 
   .about-page {
 
@@ -166,36 +183,17 @@
       margin: 60px 50px 20px 50px;
     }
 
-    &__author-info {
-      margin: 40px 0 50px 0;
-    }
-
     &__author-image {
-      min-width: 250px;
-      height: 250px;
-      margin-left: 50px;
+      min-width: 200px;
+      height: 200px;
     }
 
     &__info-wrapper {
-      margin-left: 40px;
-    }
-
-    &__author-story {
-      margin-right: 50px;
-    }
-
-    &__work-section {
-      margin-top: 50px;
-      padding: 0 50px 40px 50px;
+      margin-left: 30px;
     }
 
     &__work-section-wrapper {
       margin: 50px 0;
-    }
-
-    &__work-section-image {
-      width: 600px;
-      height: 375px;
     }
 
     &__work-section-text-wrapper {
@@ -207,94 +205,40 @@
       }
     }
 
+    &__work-section-image {
+      width: 450px;
+    }
+
   }
 }
 
-@media screen and (max-width: $large) and (orientation: landscape) {
+@media screen and (max-width: $large){
 
   .about-page {
 
     &__wrapper {
-      margin: 60px 50px 20px 50px;
+      margin: 50px 50px 20px 50px;
     }
 
     &__author-info {
-      margin: 40px 0 40px 0;
+      margin: 30px 0;
     }
 
     &__author-image {
       min-width: 200px;
       height: 200px;
-      margin-left: 50px;
     }
 
     &__info-wrapper {
-      margin-left: 40px;
-    }
-
-    &__author-story {
-      margin-right: 50px;
-    }
-
-    &__work-section {
-      margin-top: 40px;
-      padding: 0 50px 40px 50px;
+      margin-left: 30px;
     }
 
     &__work-section-title {
-      padding: 40px 0 20px 0;
-    }
-
-    &__work-section-wrapper {
-      margin: 50px 0;
-    }
-
-    &__work-section-image {
-      margin-top: 40px;
-      width: 400px;
-      height: 250px;
-    }
-
-    &__work-section-text-wrapper {
-      margin-left: 40px;
-
-      &--middle {
-        margin-left: 0;
-        margin-right: 40px;
-      }
-    }
-
-  }
-}
-
-@media screen and (max-width: $medium) and (orientation: landscape) and (orientation: portrait) {
-
-  .about-page {
-
-    &__wrapper {
-      margin: 60px 50px 20px 50px;
-    }
-
-    &__author-info {
-      margin: 20px 0 50px 0;
-    }
-
-    &__author-image {
-      min-width: 200px;
-      height: 200px;
-      margin-left: 0;
-    }
-
-    &__info-wrapper {
-      margin-left: 20px;
-    }
-
-    &__author-story {
-      margin-right: 0;
+      padding: 30px 0;
     }
 
     &__work-section {
-      margin-top: 50px;
+      margin-top: 30px;
       padding: 0 50px 20px 50px;
     }
 
@@ -302,22 +246,48 @@
       flex-direction: column-reverse;
       justify-content: center;
       align-items: center;
-      margin: 40px 0;
+      margin: 30px 0;
 
       &:nth-of-type(2){
         flex-direction: column-reverse;
-        margin: 40px 0;
+        margin: 30px 0;
       }
     }
 
     &__work-section-image {
-      margin-top: 40px;
-      width: 400px;
-      height: 250px;
+      margin-top: 30px;
+      width: 500px;
     }
 
     &__work-section-text-wrapper {
       margin-left: 0;
+
+      &--middle {
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+
+  }
+}
+
+@media screen and (max-width: $medium){
+
+  .about-page {
+
+    &__author-image {
+      min-width: 180px;
+      height: 180px;
+    }
+
+    &__work-section-image {
+      margin-top: 30px;
+      width: 450px;
+    }
+
+    &__work-section-text-wrapper {
+      margin-left: 0;
+      width: 100%;
 
       &--middle {
         margin-left: 0;
@@ -333,29 +303,19 @@
   .about-page {
 
     &__wrapper {
-      margin: 60px 50px 20px 50px;
+      margin: 50px 50px 30px 50px;
     }
 
     &__author-info {
-      margin: 20px 0 50px 0;
-    }
-
-    &__author-image {
-      min-width: 200px;
-      height: 200px;
-      margin-left: 0;
+      margin: 30px 0;
     }
 
     &__info-wrapper {
-      margin-left: 20px;
-    }
-
-    &__author-story {
-      margin-right: 0;
+      margin-left: 30px;
     }
 
     &__work-section {
-      margin-top: 50px;
+      margin-top: 30px;
       padding: 0 50px 20px 50px;
     }
 
@@ -363,18 +323,17 @@
       flex-direction: column-reverse;
       justify-content: center;
       align-items: center;
-      margin: 40px 0;
+      margin: 30px 0;
 
       &:nth-of-type(2){
         flex-direction: column-reverse;
-        margin: 40px 0;
+        margin: 30px 0;
       }
     }
 
     &__work-section-image {
-      margin-top: 40px;
-      width: 400px;
-      height: 250px;
+      margin-top: 30px;
+      width: 450px;
     }
 
     &__work-section-text-wrapper {
@@ -389,52 +348,41 @@
   }
 }
 
-@media screen and (max-width: $small) and (orientation: landscape) {
-
-  .about-page {
-
-    &__author-info {
-      margin-bottom: 40px;
-    }
-
-    &__author-image {
-      min-width: 180px;
-      height: 180px;
-      margin-top: 30px;
-    }
-
-    &__work-section {
-      margin-top: 40px;
-    }
-  }
- }
-
-@media screen and (max-width: $small) and (orientation: portrait) {
-
-  .about-page {
-
-    &__author-info {
-      margin-bottom: 40px;
-    }
-
-    &__author-image {
-      min-width: 180px;
-      height: 180px;
-      margin-top: 30px;
-    }
-
-    &__work-section {
-      margin-top: 40px;
-    }
-  }
- }
-
-@media screen and (max-width: $xsmall) and (orientation: landscape) {
+@media screen and (max-width: $small){
 
   .about-page {
 
     &__wrapper {
-      margin: 60px 50px 20px 50px;
+      margin: 40px 50px 30px 50px;
+    }
+
+    &__author-info {
+      margin: 30px 0;
+    }
+
+    &__author-image {
+      min-width: 160px;
+      height: 160px;
+      align-self: center;
+    }
+
+    &__work-section-image {
+      width: 400px;
+    }
+
+    &__work-section-title {
+      padding: 30px 0 10px 0;
+    }
+
+  }
+ }
+
+@media screen and (max-width: $xsmall){
+
+  .about-page {
+
+    &__wrapper {
+      margin: 40px 50px 20px 50px;
     }
 
     &__author-info {
@@ -445,8 +393,8 @@
     }
 
     &__author-image {
-      min-width: 200px;
-      height: 200px;
+      min-width: 180px;
+      height: 180px;
       margin-left: 0;
     }
 
@@ -459,15 +407,20 @@
 
     &__author-story {
       margin-right: 0;
+      text-align: left;
+    }
+
+    &__text {
+      text-align: left;
     }
 
     &__work-section {
-      margin-top: 40px;
+      margin-top: 30px;
       padding: 0 50px 20px 50px;
     }
 
     &__work-section-title {
-      padding: 40px 0 20px 0;
+      padding: 30px 0 10px 0;
     }
 
     &__work-section-wrapper {
@@ -484,76 +437,6 @@
       margin-top: 40px;
       width: 300px;
       height: 174.5px;
-    }
-
-    &__work-section-text-wrapper {
-      justify-content: center;
-      align-content: center;
-      margin-left: 0;
-
-      &--middle {
-        margin-left: 0;
-        margin-right: 0;
-      }
-    }
-  }
-}
-
-@media screen and (max-width: $xsmall) and (orientation: portrait) {
-
-  .about-page {
-
-    &__wrapper {
-      margin: 60px 50px 20px 50px;
-    }
-
-    &__author-info {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin: 20px 0 40px 0;
-    }
-
-    &__author-image {
-      min-width: 200px;
-      height: 200px;
-      margin-left: 0;
-    }
-
-    &__info-wrapper {
-      justify-content: center;
-      align-items: center;
-      margin-top: 20px;
-      margin-left: 0;
-    }
-
-    &__author-story {
-      margin-right: 0;
-    }
-
-    &__work-section {
-      margin-top: 40px;
-      padding: 0 50px 20px 50px;
-    }
-
-    &__work-section-title {
-      padding: 40px 0 20px 0;
-    }
-
-    &__work-section-wrapper {
-      flex-direction: column-reverse;
-      justify-content: center;
-      align-items: center;
-      margin: 40px 0;
-
-      &:nth-of-type(2) {
-        flex-flow: column-reverse;
-      }
-    }
-    &__work-section-image {
-      margin-top: 40px;
-      width: 316px;
-      height: 184.5px;
     }
 
     &__work-section-text-wrapper {

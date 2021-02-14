@@ -1,15 +1,14 @@
 import React from "react";
+import Footer from "../layouts/Footer";
 
 import "../styles/AboutPage.css";
-import Footer from "../layouts/Footer";
+
 
 const AboutPage = () => {
     return (
         <div className="about-page">
             <div className="about-page__wrapper">
-
                 <h1 className="about-page__title page-title">o nas</h1>
-
                 <div className="about-page__author-info">
                     <div className="about-page__author-image"/>
                     <div className="about-page__info-wrapper">
@@ -24,7 +23,6 @@ const AboutPage = () => {
                         </p>
                     </div>
                 </div>
-
                 <p className="about-page__text text">
                     Działamy z myślą o osobach, które nie mają głowy do zajmowania się tworzeniem ładnej i funkcjonalnej
                     przestrzeni życiowej, sprzyjającej dobremu samopoczuciu i rozwojowi. Wykonujemy i realizujemy
@@ -35,13 +33,10 @@ const AboutPage = () => {
                     różnorodność i inspirujących ludzi, dzięki którym projekty są indywidualne i niepowtarzalne.
                 </p>
             </div>
-
             <section className="about-page__work-section">
-
                 <h1 className="about-page__work-section-title title">Współpracę z klientem dzielimy na trzy etapy</h1>
                 <p className="about-page__work-section-small-text small-text">Naszym priorytetem jest klient i stworzenie dla
                     niego idealnej przestrzeni życiowej.</p>
-
                 <div className="about-page__work-section-wrapper">
                     <img className="about-page__work-section-image" src="/images/aboutPage/img1.jpg" alt=""/>
                     <div className="about-page__work-section-text-wrapper">
@@ -57,8 +52,6 @@ const AboutPage = () => {
                             którym przyjdzie mu funkcjonować.
                         </p>
                     </div>
-
-
                 </div>
                 <div className="about-page__work-section-wrapper">
                     <img className="about-page__work-section-image" src="/images/aboutPage/img2.jpg" alt=""/>
@@ -89,13 +82,9 @@ const AboutPage = () => {
                     </div>
                 </div>
             </section>
-
-            <footer>
-                {<Footer/>}
-            </footer>
-
+                <Footer/>
         </div>
-    )
+    );
 }
 
 export default AboutPage;
