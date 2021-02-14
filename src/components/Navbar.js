@@ -13,21 +13,39 @@ export const Navbar = (props) => {
     const {links = []} = props;
 
     const [click, setClick] = useState(false);
-    const [dropdown, setDropdown] = useState(false);
 
-    let handleMouseEnter = () => {
-        if(window.innerWidth < 868) {
-            setDropdown(false);
+    const [dropdownRealizations, setDropdownRealizations] = useState(false);
+    const [dropdownProjects, setDropdownProjects] = useState(false);
+
+    let handleMouseEnterRealizations = () => {
+        if(window.innerWidth < 1024) {
+            setDropdownRealizations(false);
         } else {
-            setDropdown(true);
+            setDropdownRealizations(true);
         }
     }
 
-    const handleMouseLeave = () => {
-        if(window.innerWidth < 868) {
-           setDropdown(false);
+    const handleMouseLeaveRealizations = () => {
+        if(window.innerWidth < 1024) {
+           setDropdownRealizations(false);
         } else {
-           setDropdown(false);
+           setDropdownRealizations(false);
+        }
+    }
+
+    let handleMouseEnterProjects = () => {
+        if(window.innerWidth < 1024) {
+            setDropdownProjects(false);
+        } else {
+            setDropdownProjects(true);
+        }
+    }
+
+    const handleMouseLeaveProjects = () => {
+        if(window.innerWidth < 1024) {
+            setDropdownProjects(false);
+        } else {
+            setDropdownProjects(false);
         }
     }
 
@@ -39,16 +57,16 @@ export const Navbar = (props) => {
         return (
             <NavLink
                 key={index}
-                as={NavLink}
-                className={item.name === 'realizacje' ? "navbar__nav-link--realizations" : "navbar__nav-link"}
+                className={(item.name === 'realizacje' || item.name === 'projekty') ? "navbar__nav-link--active" : "navbar__nav-link"}
                 to={item.path}
                 exact={true}
-                onMouseLeave={ item.name === 'realizacje' ? handleMouseLeave : null}
-                onMouseEnter={ item.name === 'realizacje' ? handleMouseEnter : null}
+                onMouseLeave={ (item.name === 'realizacje' ? handleMouseLeaveRealizations : null) || (item.name === 'projekty' ? handleMouseLeaveProjects : null)}
+                onMouseEnter={ (item.name === 'realizacje' ? handleMouseEnterRealizations : null) || (item.name === 'projekty' ? handleMouseEnterProjects : null)}
             >
                 {item.name}
-                {item.name === 'realizacje' ? <i className='fas fa-caret-down navbar__nav-link--realizations-icon'/> : null}
-                {dropdown && <Dropdown subMenuItems={item.subMenuItems}/>}
+                {(item.name === 'realizacje' || item.name === 'projekty') ? <i className='fas fa-caret-down navbar__nav-link--active-icon'/> : null}
+                {item.name === 'realizacje' ? (dropdownRealizations && <Dropdown subMenuItems={item.subMenuItems}/>) : null }
+                {item.name === 'projekty' ? (dropdownProjects && <Dropdown subMenuItems={item.subMenuItems}/>) : null }
             </NavLink>
         );
 

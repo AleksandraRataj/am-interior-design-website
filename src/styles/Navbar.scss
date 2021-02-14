@@ -28,7 +28,7 @@
     list-style: none;
   }
 
-  $nav-link-font-size: 1.8rem;
+  $nav-link-font-size: 1.6rem;
 
   &__nav-link {
     width: auto;
@@ -48,7 +48,7 @@
       background-color: $menu-color;
     }
 
-    &--realizations {
+    &--active {
       width: 170px;
       text-align: center;
       line-height: 90px;
@@ -61,14 +61,15 @@
       letter-spacing: 2px;
       transition: .1s ease-in all;
 
+
       &:hover {
         background-color: $menu-color;
       }
 
       &-icon {
-        margin-left: 8px;
+        margin-left: 10px;
         color: white;
-        font-size: 2rem;
+        font-size: 1.8rem;
       }
     }
   }
@@ -82,18 +83,14 @@
 
   .navbar {
 
-    $nav-link-font-size: 1.7rem;
-
     &__nav-link {
       padding: 0 25px;
-      font-size: $nav-link-font-size;
 
-      &--realizations {
+      &--active {
         width: 160px;
-        font-size: $nav-link-font-size;
 
         &-icon {
-          margin-left: 7px;
+          margin-left: 8px;
         }
       }
     }
@@ -108,11 +105,11 @@
     $nav-link-font-size: 1.5rem;
 
     &__nav-link {
-      padding: 0 18px;
+      padding: 0 17px;
       font-size: $nav-link-font-size;
 
-      &--realizations {
-        width: 155px;
+      &--active {
+        width: 150px;
         font-size: $nav-link-font-size;
 
         &-icon {
@@ -136,18 +133,18 @@
     $nav-link-font-size: 1.2rem;
 
     &__nav-link {
-      padding: 0 13px;
+      padding: 0 10px;
       line-height: 80px;
       font-size: $nav-link-font-size;
 
-      &--realizations {
-        width: 142px;
+      &--active {
+        width: 144px;
         line-height: 80px;
         font-size: $nav-link-font-size;
 
         &-icon {
           margin-left: 6px;
-          font-size: 1.7rem;
+          font-size: 1.5rem;
         }
       }
     }
@@ -155,98 +152,6 @@
 }
 
 @media screen and (max-width: $large) and (orientation: landscape) {
-
-  .navbar {
-    height: 70px;
-
-    &__logo-img {
-      height: 54px;
-    }
-
-    $nav-link-font-size: 1rem;
-
-    &__nav-link {
-      padding: 0 8px;
-      line-height: 70px;
-      font-size: $nav-link-font-size;
-
-      &--realizations {
-        width: 120px;
-        line-height: 70px;
-        font-size: $nav-link-font-size;
-
-        &-icon {
-          margin-left: 4px;
-          font-size: 1.2rem;
-        }
-      }
-    }
-  }
-}
-
-@media screen and (max-width: $large) and (orientation: portrait) {
-
-  .navbar {
-
-    &__list {
-      flex-direction: column;
-      justify-content: flex-start;
-      width: 100%;
-      height: calc(100vh - 80px);
-      padding: 20px 0;
-      background-color: $menu-background-color;
-
-      position: absolute;
-      top: 80px;
-      left: -100%;
-      z-index: 1000;
-
-      transition: all 0.5s ease;
-
-      &--active {
-        left: 0;
-        width: 100%;
-
-        transition: all 0.5s ease;
-        z-index: 1000;
-      }
-    }
-
-    $nav-link-font-size: 2rem;
-
-    &__nav-link, &__nav-link--realizations {
-      position: relative;
-      left: 40px;
-      width: calc(100% - 80px);
-      height: 80px;
-      padding: 0 10px;
-      margin-right: 50px;
-      text-align: left;
-      line-height: 80px;
-      font-size: $nav-link-font-size;
-
-      &-icon {
-        display: none;
-      }
-    }
-
-    &__div-hamburger-icon {
-      display: block;
-      position: absolute;
-      top: 25px;
-      right: 50px;
-      z-index: 10000;
-    }
-
-    &__hamburger-icon {
-      color: white;
-      font-size: 3rem;
-    }
-  }
-
-}
-
-@media screen and (max-width: 868px) and (orientation: landscape){
 
   .navbar {
     height: 60px;
@@ -279,17 +184,17 @@
       }
     }
 
-    $nav-link-font-size: 1.2rem;
+    $nav-link-font-size: 1.5rem;
 
-    &__nav-link, &__nav-link--realizations {
+    &__nav-link, &__nav-link--active {
       position: relative;
       left: 40px;
       width: calc(100% - 80px);
-      height: 31px;
+      height: 40px;
       padding: 0 10px;
       margin-right: 50px;
       text-align: left;
-      line-height: 31px;
+      line-height: 40px;
       font-size: $nav-link-font-size;
 
       &-icon {
@@ -312,6 +217,83 @@
   }
 }
 
+@media screen and (max-width: $large) and (orientation: portrait) {
+
+  .navbar {
+
+    &__list {
+      flex-direction: column;
+      justify-content: flex-start;
+      width: 100%;
+      height: calc(100vh - 80px);
+      padding: 20px 0;
+      background-color: $menu-background-color;
+
+      position: absolute;
+      top: 80px;
+      left: -100%;
+      z-index: 1000;
+
+      transition: all 0.5s ease;
+
+      &--active {
+        left: 0;
+        width: 100%;
+
+        transition: all 0.5s ease;
+        z-index: 1000;
+      }
+    }
+
+    $nav-link-font-size: 1.8rem;
+
+    &__nav-link, &__nav-link--active {
+      position: relative;
+      left: 40px;
+      width: calc(100% - 80px);
+      height: 60px;
+      padding: 0 10px;
+      margin-right: 50px;
+      text-align: left;
+      line-height: 60px;
+      font-size: $nav-link-font-size;
+
+      &-icon {
+        display: none;
+      }
+    }
+
+    &__div-hamburger-icon {
+      display: block;
+      position: absolute;
+      top: 25px;
+      right: 50px;
+      z-index: 10000;
+    }
+
+    &__hamburger-icon {
+      color: white;
+      font-size: 3rem;
+    }
+  }
+
+}
+
+@media screen and (max-width: $medium) and (orientation: landscape){
+
+  .navbar {
+
+    $nav-link-font-size: 1.3rem;
+
+    &__nav-link, &__nav-link--active{
+      height: 32px;
+      line-height: 32px;
+      font-size: $nav-link-font-size;
+    }
+
+  }
+}
+
 
 @media screen and (max-width: $medium) and (orientation: portrait) {
 
@@ -327,9 +309,9 @@
       top: 59px;
     }
 
-    $nav-link-font-size: 1.6rem;
+    $nav-link-font-size: 1.5rem;
 
-    &__nav-link, &__nav-link--realizations {
+    &__nav-link, &__nav-link--active {
       height: 50px;
       line-height: 50px;
       font-size: $nav-link-font-size;
