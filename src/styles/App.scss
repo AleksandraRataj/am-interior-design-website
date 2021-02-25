@@ -8,9 +8,9 @@ $menu-color: #5b81a2;
 $main-font-family: "Poppins", "Lato", "Open Sans", "sans-serif";
 $main-font-size: 10px;
 $bright-background-color: #EEEEEE;
-$dark-background-color: #0a0a0a;
+$dark-background-color: #0f0f0f;
 $bright-font-color: #FBF7EA;
-$button-color: #FFF3C7;
+$button-color: #1a1a1a;
 
 //media queries breakpoints
 $xsmall: 460px;
@@ -22,6 +22,50 @@ $xxlarge: 1440px;
 $xxxlarge: 1600px;
 $xxxxlarge: 1920px;
 
+@mixin margin-pages {
+  margin: 80px 100px 20px 100px;
+  @media screen and (max-width: $xxxxlarge) and (orientation: landscape) {
+    margin: 80px 80px 20px 80px;
+  }
+  @media screen and (max-width: $xlarge) {
+    margin: 60px 50px 20px 50px;
+  }
+  @media screen and (max-width: $large){
+    margin: 50px 50px 20px 50px;
+  }
+  @media screen and (max-width: $medium) and (orientation: portrait) {
+    margin: 50px 50px 30px 50px;
+  }
+  @media screen and (max-width: $small){
+    margin: 40px 50px 30px 50px;
+  }
+  @media screen and (max-width: $xsmall){
+    margin: 40px 50px 20px 50px;
+  }
+}
+
+@mixin padding-pages {
+  padding: 80px 100px 20px 100px;
+  @media screen and (max-width: $xxxxlarge) and (orientation: landscape) {
+    padding: 80px 80px 20px 80px;
+  }
+  @media screen and (max-width: $xlarge) {
+    padding: 60px 50px 20px 50px;
+  }
+  @media screen and (max-width: $large){
+    padding: 50px 50px 20px 50px;
+  }
+  @media screen and (max-width: $medium) and (orientation: portrait) {
+    padding: 50px 50px 30px 50px;
+  }
+  @media screen and (max-width: $small){
+    padding: 40px 50px 30px 50px;
+  }
+  @media screen and (max-width: $xsmall){
+    padding: 40px 50px 20px 50px;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -31,6 +75,7 @@ $xxxxlarge: 1920px;
 html {
   overflow: -moz-scrollbars-vertical;
   overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -49,7 +94,7 @@ body {
 
 .title {
   font-family: $main-font-family;
-  font-size: 3.4rem;
+  font-size: 3.2rem;
 }
 
 .subtitle {
@@ -61,7 +106,7 @@ body {
 
 .text {
   font-family: $main-font-family;
-  font-size: 1.9rem;
+  font-size: 1.8rem;
   font-weight: 400;
   line-height: 32px;
 }
@@ -72,6 +117,10 @@ body {
   font-weight: 400;
 }
 
+.bold-text {
+  font-weight: 600;
+}
+
 .button {
   width: 120px;
   height: 40px;
@@ -79,26 +128,42 @@ body {
   border-radius: 45px;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   background-color: $button-color;
-  color: $dark-background-color;
+  color: $bright-font-color;
   cursor: pointer;
   font-family: $main-font-family;
   font-size: 13px;
   font-weight: 500;
   text-align: center;
   text-decoration: none;
-  //text-transform: uppercase;
   line-height: 40px;
   transition: all .2s ease-in-out 0s;
 
   &:hover{
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
-    color: $bright-font-color;
-    background-color: $dark-background-color;
+    background-color: $menu-color;
   }
+}
 
+.arrow {
+  color: $dark-background-color;
+  font-size: 3rem;
+  position: fixed;
+  bottom: 3%;
+  right: 2%;
+  cursor: pointer;
+  transition: .2s;
+
+  &:hover {
+    color: $menu-color;
+    bottom: 3.2%;
+  }
 }
 
 @media screen and (max-width: ($xxxxlarge))  and (orientation: landscape){
+
+  .page-title {
+    font-size: 3.6rem;
+  }
 
   .title {
     font-size: 3.2rem;
@@ -109,8 +174,8 @@ body {
   }
 
   .text {
-    font-size: 2rem;
-    line-height: 30px;
+    font-size: 1.8rem;
+    line-height: 28px;
   }
 
   .small-text {
@@ -139,7 +204,7 @@ body {
 
 }
 
-@media screen and (max-width: ($xxxlarge))  and (orientation: landscape){
+@media screen and (max-width: ($xxxlarge)){
 
   .page-title {
     font-size: 3.4rem;
@@ -150,33 +215,19 @@ body {
   }
 
   .subtitle {
-    font-size: 2.7rem;
+    font-size: 2.5rem;
   }
 
   .text {
-    font-size: 1.8rem;
-    line-height: 28px;
+    font-size: 1.7rem;
+    line-height: 25px;
   }
 
-}
-
-@media screen and (max-width: ($xxxlarge))  and (orientation: portrait){
-
-  .page-title {
-    font-size: 3.4rem;
-  }
-
-  .title {
-    font-size: 3rem;
-  }
-
-  .subtitle {
-    font-size: 2.7rem;
-  }
-
-  .text {
-    font-size: 1.8rem;
-    line-height: 28px;
+  .button {
+    width: 110px;
+    height: 38px;
+    font-size: 13px;
+    line-height: 38px;
   }
 
 }
@@ -184,20 +235,20 @@ body {
 @media screen and (max-width: ($xxlarge))  and (orientation: landscape){
 
   .page-title {
-    font-size: 3.2rem;
+    font-size: 3rem;
   }
 
   .title {
-    font-size: 2.8rem;
+    font-size: 2.7rem;
   }
 
   .subtitle {
-    font-size: 2.6rem;
+    font-size: 2.3rem;
   }
 
   .text {
     font-size: 1.6rem;
-    line-height: 24px;
+    line-height: 23px;
   }
 
   .small-text {
@@ -209,7 +260,7 @@ body {
 @media screen and (max-width: ($xxlarge))  and (orientation: portrait){
 
   .page-title {
-    font-size: 3.2rem;
+    font-size: 3rem;
   }
 
   .title {
@@ -234,7 +285,7 @@ body {
 @media screen and (max-width: ($xlarge)) and (orientation: landscape){
 
   .page-title {
-    font-size: 3rem;
+    font-size: 2.8rem;
   }
 
   .title {
@@ -255,11 +306,10 @@ body {
   }
 
   .button {
-    width: 120px;
-    height: 40px;
-    margin: 8px;
-    font-size: 12px;
-    line-height: 40px;
+    width: 108px;
+    height: 35px;
+    font-size: 13px;
+    line-height: 35px;
   }
 
 }
@@ -267,7 +317,7 @@ body {
 @media screen and (max-width: ($xlarge)) and (orientation: portrait){
 
   .page-title {
-    font-size: 3rem;
+    font-size: 2.8rem;
   }
 
   .title {
@@ -288,35 +338,34 @@ body {
   }
 
   .button {
-    width: 120px;
-    height: 40px;
-    margin: 8px;
-    font-size: 12px;
-    line-height: 40px;
+    width: 108px;
+    height: 35px;
+    font-size: 13px;
+    line-height: 35px;
   }
 }
 
 @media screen and (max-width: ($large))  and (orientation: landscape){
 
   .page-title {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
   }
 
   .title {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
   }
 
   .subtitle {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 
   .text {
     font-size: 1.3rem;
-    line-height: 19px;
+    line-height: 18px;
   }
 
   .small-text {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 
 }
@@ -324,7 +373,7 @@ body {
 @media screen and (max-width: ($large))  and (orientation: portrait){
 
   .page-title {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
   }
 
   .title {
@@ -349,15 +398,15 @@ body {
 @media screen and (max-width: ($medium))  and (orientation: landscape){
 
   .page-title {
-    font-size: 2.6rem;
+    font-size: 2.4rem;
   }
 
   .title {
-    font-size: 2.2rem;
+    font-size: 2.1rem;
   }
 
   .subtitle {
-    font-size: 2rem;
+    font-size: 1.9rem;
   }
 
   .text {
@@ -366,7 +415,7 @@ body {
   }
 
   .small-text {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
 }
@@ -374,7 +423,7 @@ body {
 @media screen and (max-width: ($medium))  and (orientation: portrait){
 
   .page-title {
-    font-size: 2.6rem;
+    font-size: 2.4rem;
   }
 
   .title {
@@ -399,7 +448,7 @@ body {
 @media screen and (max-width: ($small))  and (orientation: landscape){
 
   .page-title {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
   }
 
   .title {
@@ -408,6 +457,11 @@ body {
 
   .subtitle {
     font-size: 1.8rem;
+  }
+
+  .text {
+    font-size: 1.3rem;
+    line-height: 17px;
   }
 
   .button {
@@ -443,38 +497,21 @@ body {
   }
 }
 
-@media screen and (max-width: ($xsmall))  and (orientation: landscape){
+@media screen and (max-width: ($xsmall)){
 
   .page-title {
     font-size: 2.2rem;
   }
 
   .title {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 
   .subtitle {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
   }
 
 }
-
-@media screen and (max-width: ($xsmall))  and (orientation: portrait){
-
-  .page-title {
-    font-size: 2.2rem;
-  }
-
-  .title {
-    font-size: 1.8rem;
-  }
-
-  .subtitle {
-    font-size: 1.7rem;
-  }
-
-}
-
 
 
 

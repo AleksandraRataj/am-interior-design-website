@@ -1,23 +1,58 @@
 @import "App.scss";
 
-$width-image-landscape: calc((100vw / 2) - 200px);
+$width-image-landscape: calc((100vw / 2) - 180px);
 $height-image-landscape: calc(100vh / 2.6);
 
 $width-image-portrait: 60vw;
 $height-image-portrait: calc(100vh / 4);
 
-.realizations-page {
+@mixin projects-realizations-images {
+  &__img {
+    &--private {
+      width: $width-image-landscape;
+      height: $height-image-landscape;
+      max-height: 400px;
+      min-width: 100px;
+      background-position: center;
+      background-size: cover;
+      transition: .3s ease-in-out;
+      opacity: 0.85;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    &--public {
+      width: $width-image-landscape;
+      height: $height-image-landscape;
+      max-height: 400px;
+      min-width: 100px;
+      background-position: center;
+      background-size: cover;
+      transition: .3s ease-in-out;
+      opacity: 0.85;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+
+.realizations-page, .projects-page {
   height: auto;
   overflow: hidden;
   background-color: $bright-background-color;
 
   &__wrapper {
-    margin: 90px 60px 30px 60px;
+    @include margin-pages;
   }
 
   &__description {
     margin: 25px 0;
-    line-height: 26px;
+    line-height: 25px;
     text-align: justify;
   }
 
@@ -25,13 +60,12 @@ $height-image-portrait: calc(100vh / 4);
     display: flex;
     justify-content: space-evenly;
     align-items: stretch;
-    margin: 40px 20px;
+    margin: 30px 20px;
   }
 
   &__element-wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
   }
 
@@ -43,38 +77,6 @@ $height-image-portrait: calc(100vh / 4);
     overflow: hidden;
   }
 
-  &__img {
-    &--private {
-      width: $width-image-landscape;
-      height: $height-image-landscape;
-      max-height: 400px;
-      min-width: 100px;
-      background-image: url("/src/data/images/img1.jpg");
-      background-position: center;
-      background-size: cover;
-      transition: .4s ease-in-out;
-
-      &:hover {
-        transform: scale(1.2);
-      }
-    }
-
-    &--public {
-      width: $width-image-landscape;
-      height: $height-image-landscape;
-      max-height: 400px;
-      min-width: 100px;
-      background-image: url("/src/data/images/img14.jpg");
-      background-position: center;
-      background-size: cover;
-      transition: .4s ease-in-out;
-
-      &:hover {
-        transform: scale(1.2);
-      }
-    }
-  }
-
   &__link {
     text-decoration: none;
     color: black;
@@ -83,35 +85,49 @@ $height-image-portrait: calc(100vh / 4);
 
   &__subtitle {
     margin: 16px 0;
-
   }
 
   &__small-text {
     width: $width-image-landscape;
-    text-align: center;
-    margin-bottom: 16px;
+    text-align: justify;
+    margin-bottom: 10px;
   }
 
+}
+
+.realizations-page{
+  @include projects-realizations-images;
+  &__img {
+    &--private {
+      background-image: url("/src/data/images/realizations-img1.jpg");
+    }
+
+    &--public {
+      background-image: url("/src/data/images/realizations-img2.jpg");
+    }
+  }
+
+}
+
+.projects-page {
+  @include projects-realizations-images;
+  &__img {
+    &--private {
+      background-image: url("/src/data/images/img3.jpg");
+    }
+
+    &--public {
+      background-image: url("/src/data/images/img2.jpg");
+    }
+  }
 }
 
 @media screen and (max-width: $xxxlarge) and (orientation: landscape) {
 
   .realizations-page {
 
-    &__wrapper {
-      margin-top: 80px;
-    }
-
-    &__elements-wrapper {
-      margin: 20px 20px;
-    }
-
     &__subtitle {
       margin: 14px 0;
-    }
-
-    &__small-text {
-      margin-bottom: 14px;
     }
   }
 }
@@ -119,20 +135,12 @@ $height-image-portrait: calc(100vh / 4);
 @media screen and (max-width: $xlarge) and (orientation: landscape) {
   .realizations-page {
 
-    &__wrapper {
-      margin-top: 70px;
-    }
-
     &__elements-wrapper {
-      margin: 25px 20px;
+      margin: 20px 20px;
     }
 
     &__subtitle {
       margin: 12px 0;
-    }
-
-    &__small-text {
-      margin-bottom: 12px;
     }
   }
 }
@@ -141,14 +149,10 @@ $height-image-portrait: calc(100vh / 4);
 
   .realizations-page {
 
-    &__wrapper {
-      margin: 80px 60px 30px 60px;
-    }
-
     &__elements-wrapper {
       flex-direction: column;
       justify-content: space-between;
-      margin: 40px 20px;
+      margin: 50px 20px;
     }
 
     &__img-wrapper {
@@ -191,10 +195,6 @@ $height-image-portrait: calc(100vh / 4);
 @media screen and (max-width: $medium) and (orientation: landscape) {
 
   .realizations-page {
-
-    &__wrapper {
-      margin: 50px 40px 20px 40px;
-    }
 
     &__elements-wrapper {
       flex-direction: column;
@@ -239,6 +239,21 @@ $height-image-portrait: calc(100vh / 4);
       width: $width-image-portrait;
       margin-bottom: 14px;
 
+    }
+  }
+}
+
+@media screen and (max-width: $medium) and (orientation: portrait) {
+
+  .realizations-page {
+
+    &__elements-wrapper {
+      margin: 30px 20px;
+    }
+
+    &__small-text {
+      width: $width-image-portrait;
+      margin-bottom: 10px;
     }
   }
 }

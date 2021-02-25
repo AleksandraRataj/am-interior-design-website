@@ -406,49 +406,39 @@ body {
     font-size: 1.5rem;
   }
 }
-.dropdown-menu {
-  width: inherit;
-  position: absolute;
-  top: 90px;
-  list-style: none;
-  text-align: start;
-  background-color: #1f1f1f;
-}
-.dropdown-menu--clicked {
-  display: none;
-}
-.dropdown-menu__nav-link {
-  text-align: center;
-  margin: 0 0;
-  display: block;
-  font-size: 10px;
-  cursor: pointer;
-  height: auto;
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  text-decoration: none;
-  color: #fff;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 10000;
 }
-.dropdown-menu__nav-link:hover {
-  color: #5b81a2;
+.backdrop__image {
+  display: block;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  max-width: 80%;
+  max-height: 80%;
+  box-shadow: 2px 5px 7px rgba(0, 0, 0, 0.5);
+}
+.backdrop__icon-wrapper {
+  position: relative;
+  bottom: -13%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+}
+.backdrop__icon {
+  display: block;
+  font-size: 4rem;
+  color: white;
+  cursor: pointer;
 }
 
-@media screen and (max-width: 1440px) and (orientation: landscape) {
-  .dropdown-menu {
-    top: 90px;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .dropdown-menu {
-    top: 80px;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .dropdown-menu {
-    top: 70px;
-  }
-  .dropdown-menu__nav-link {
-    font-size: 7px;
-  }
-}
-
-/*# sourceMappingURL=Dropdown.css.map */
+/*# sourceMappingURL=Modal.css.map */

@@ -1,0 +1,60 @@
+@import "App.scss";
+
+.photo-page {
+  height: auto;
+  overflow: hidden;
+  background-color: $dark-background-color;
+  color: $bright-font-color;
+
+  &__page-title {
+    padding-top: 120px !important;
+  }
+
+  &__wrapper {
+    height: 100vh;
+    background-image: url("/src/data/images/photographyBgc.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+  }
+
+  &__small-text {
+    width: 60%;
+    text-align: center;
+    margin: 20px auto;
+  }
+
+  &__author-info {
+    display: flex;
+    position: absolute;
+    bottom: 80px;
+    margin: 60px 80px 0 80px;
+  }
+
+  &__author-image {
+    min-width: 325px;
+    height: 325px;
+    background-image: url("/src/data/images/ŁukaszMichalak.jpg");
+    background-size: cover;
+    background-position: center right;
+    overflow: hidden;
+  }
+
+  &__info-wrapper {
+    display: flex;
+    width: auto;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 50px;
+  }
+
+  &__author-story {
+    text-align: justify;
+  }
+
+  &__text{
+    text-align: justify;
+  }
+
+}

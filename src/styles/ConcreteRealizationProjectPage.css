@@ -406,49 +406,174 @@ body {
     font-size: 1.5rem;
   }
 }
-.dropdown-menu {
-  width: inherit;
-  position: absolute;
-  top: 90px;
-  list-style: none;
-  text-align: start;
-  background-color: #1f1f1f;
+.concrete-project__wrapper {
+  padding: 80px 100px 20px 100px;
+  background-color: #EEEEEE;
 }
-.dropdown-menu--clicked {
-  display: none;
-}
-.dropdown-menu__nav-link {
-  text-align: center;
-  margin: 0 0;
-  display: block;
-  font-size: 10px;
-  cursor: pointer;
-  height: auto;
-  width: 100%;
-  text-decoration: none;
-  color: #fff;
-}
-.dropdown-menu__nav-link:hover {
-  color: #5b81a2;
-}
-
-@media screen and (max-width: 1440px) and (orientation: landscape) {
-  .dropdown-menu {
-    top: 90px;
+@media screen and (max-width: 1920px) and (orientation: landscape) {
+  .concrete-project__wrapper {
+    padding: 80px 80px 20px 80px;
   }
 }
 @media screen and (max-width: 1200px) {
-  .dropdown-menu {
-    top: 80px;
+  .concrete-project__wrapper {
+    padding: 60px 50px 20px 50px;
   }
 }
 @media screen and (max-width: 1024px) {
-  .dropdown-menu {
-    top: 70px;
+  .concrete-project__wrapper {
+    padding: 50px 50px 20px 50px;
   }
-  .dropdown-menu__nav-link {
-    font-size: 7px;
+}
+@media screen and (max-width: 823px) and (orientation: portrait) {
+  .concrete-project__wrapper {
+    padding: 50px 50px 30px 50px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .concrete-project__wrapper {
+    padding: 40px 50px 30px 50px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .concrete-project__wrapper {
+    padding: 40px 50px 20px 50px;
+  }
+}
+.concrete-project__title {
+  margin-bottom: 20px;
+}
+.concrete-project__description {
+  width: 90%;
+  margin: 0 auto;
+  text-align: justify;
+}
+.concrete-project__details-wrapper {
+  width: 90%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+}
+.concrete-project__details {
+  display: inline;
+  line-height: 34px;
+}
+.concrete-project__details--yardage {
+  line-height: 30px !important;
+}
+.concrete-project__images-wrapper {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+}
+.concrete-project__one-image-wrapper {
+  width: 26vw;
+  height: calc(26vw * 0.66);
+  margin-bottom: 3rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.concrete-project__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+@media screen and (max-width: 1440px) {
+  .concrete-project__description {
+    width: 95%;
+  }
+  .concrete-project__details-wrapper {
+    width: 95%;
+  }
+  .concrete-project__details {
+    display: inline;
+    line-height: 32.33px;
+  }
+  .concrete-project__details--yardage {
+    line-height: 28px !important;
+  }
+  .concrete-project__images-wrapper {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .concrete-project__title {
+    margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .concrete-project__title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .concrete-project__details-wrapper {
+    margin: 15px auto;
+  }
+  .concrete-project__details {
+    line-height: 30px;
+  }
+  .concrete-project__details--yardage {
+    line-height: 26px !important;
+  }
+  .concrete-project__images-wrapper {
+    width: 95%;
+  }
+  .concrete-project__one-image-wrapper {
+    width: 41vw;
+    height: calc(41vw * 0.66);
+  }
+}
+@media screen and (max-width: 823px) {
+  .concrete-project__title {
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+  .concrete-project__details-wrapper {
+    margin: 10px auto;
+  }
+  .concrete-project__details {
+    line-height: 26px;
+  }
+  .concrete-project__details--yardage {
+    line-height: 22px !important;
+  }
+  .concrete-project__images-wrapper {
+    width: 95%;
+  }
+  .concrete-project__one-image-wrapper {
+    width: 38vw;
+    height: calc(38vw * 0.66);
+  }
+}
+@media screen and (max-width: 640px) {
+  .concrete-project__description {
+    width: 100%;
+  }
+  .concrete-project__details-wrapper {
+    width: 100%;
+  }
+  .concrete-project__details-wrapper {
+    margin: 10px auto;
+  }
+  .concrete-project__details {
+    line-height: 26px;
+  }
+  .concrete-project__details--yardage {
+    line-height: 22px !important;
+  }
+  .concrete-project__images-wrapper {
+    width: 100%;
+  }
+  .concrete-project__one-image-wrapper {
+    width: 80vw;
+    height: calc(90vw * 0.66);
   }
 }
 
-/*# sourceMappingURL=Dropdown.css.map */
+/*# sourceMappingURL=ConcreteRealizationProjectPage.css.map */
