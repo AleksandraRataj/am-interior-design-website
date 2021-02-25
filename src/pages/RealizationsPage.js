@@ -1,56 +1,74 @@
-import React from "react";
+import React, {useLayoutEffect} from "react";
 import {NavLink} from "react-router-dom";
-
-import '../styles/RealizationsPage.css';
 import Footer from "../layouts/Footer";
+import {motion} from "framer-motion";
+import '../styles/RealizationsProjectsPages.css';
+
 
 export const Realizations = () => {
+
+    useLayoutEffect(() => {
+        window.scrollTo(0,0)
+    });
+
     return (
         <div className="realizations-page">
             <div className="realizations-page__wrapper">
 
-                <h1 className="realizations-page__page-title page-title">REALIZAJCE</h1>
-
-                {/*<p className="realizations-page__description text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore*/}
-                {/*    itaque, laudantium maiores neque numquam possimus repudiandae totam vero vitae voluptatum! A, consectetur ea explicabo illo ipsam nesciunt nulla*/}
-                {/*    rem reprehenderit. A, ad consequatur consequuntur dignissimos dolor dolorem eveniet in maxime molestias*/}
-                {/*    nam neque nisi quibusdam, tempora velit voluptates. Ab debitis ea est harum iste iure libero numquam*/}
-                {/*    odit, quidem quos.*/}
-                {/*</p>*/}
+                <h1 className="realizations-page__page-title page-title">realizacje</h1>
 
                 <div className="realizations-page__elements-wrapper">
                     <div className="realizations-page__element-wrapper">
 
                         <NavLink to="/realizacje-wnetrza-prywatne" className="realizations-page__link">
-                            <div className="realizations-page__img-wrapper">
+                            <motion.div
+                                initial={{opacity: 0}}
+                                animate={{opacity: 1}}
+                                transition={{delay: 0.2}}
+                                className="realizations-page__img-wrapper">
                                 <div className="realizations-page__img--private"/>
-                            </div>
+                            </motion.div>
                         </NavLink>
 
-                        <h2 className="realizations-page__subtitle subtitle">Realizacje prywatne</h2>
-                        <p className="realizations-page__small-text small-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aperiam autem dolorem, dolorum
-                            eaque modi nam natus neque nulla possimus quae quidem quis sed totam voluptates! Fugit in
-                            inventore porro? Animi aut debitis eos exercitationem illo in laborum magni maiores modi natus
-                            optio placeat quae.
+                        <h2 className="realizations-page__subtitle subtitle">realizacje prywatne</h2>
+                        <p className="realizations-page__small-text small-text">
+                            Z wielką przyjemnością wykonujemy projekty wnętrz mieszkań i domów prywatnych. Każdy klient
+                            to nowa historia – poznawanie jego stylu życia, funkcjonowania i upodobań stylistycznych
+                            traktujemy jako wyróżnienie. Ważne, aby do każdej takiej historii podejść indywidualnie i z
+                            „czystą kartą”. Pamiętamy cały czas o tym, że tematem naszej pracy jest przestrzeń życiowa
+                            klienta i to do jego stylu życia należy się dostosować. Bardzo cieszy nas to, że do naszej
+                            pracowni trafiają osoby o różnych gustach wnętrzarskich i z różnymi potrzebami życiowymi. To
+                            sprawia, że nie ograniczmy się do jednego stylu a każdy projekt jest nową, ciekawą przygodą.
                         </p>
-                        <NavLink to="/realizacje-wnetrza-prywatne" className="realizations-page__button button">zobacz więcej</NavLink>
+                        <NavLink to="/realizacje-wnetrza-prywatne" className="realizations-page__button button">zobacz
+                            więcej</NavLink>
                     </div>
 
                     <div className="realizations-page__element-wrapper">
-                        
+
                         <NavLink to="/realizacje-wnetrza-publiczne" className="realizations-page__link">
-                            <div className="realizations-page__img-wrapper">
+                            <motion.div
+                                initial={{opacity: 0}}
+                                animate={{opacity: 1}}
+                                transition={{delay: 0.2}}
+                                className="realizations-page__img-wrapper">
                                 <div className="realizations-page__img--public"/>
-                            </div>
+                            </motion.div>
                         </NavLink>
 
-                        <h2 className="realizations-page__subtitle subtitle">Realizacje publiczne</h2>
-                        <p className="realizations-page__small-text small-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aperiam autem dolorem, dolorum
-                            eaque modi nam natus neque nulla possimus quae quidem quis sed totam voluptates! Fugit in
-                            inventore porro? Animi aut debitis eos exercitationem illo in laborum magni maiores modi natus
-                            optio placeat quae.
+                        <h2 className="realizations-page__subtitle subtitle">realizacje publiczne</h2>
+                        <p className="realizations-page__small-text small-text">
+                            Projekty wnętrz publicznych, takich jak restauracje, zakłady usługowe, pensjonaty i
+                            apartamenty pod wynajem traktujemy jako wspaniałe wyzwanie. Zaczynając prace nad takim
+                            projektem, musimy podejść do niego inaczej niż do wnętrz prywatnych – tutaj ważny jest
+                            uniwersalizm i funkcjonalność takiej przestrzeni. Każda osoba pojawiająca się we wnętrzu
+                            publicznym powinna czuć się w niej dobrze i wyjątkowo. Sztuką jest więc stworzenie wnętrza
+                            dostosowanego do dużej liczby odbiorców, przy jednoczesnej dbałości o estetykę i wyjątkowość
+                            tego miejsca. Ważne aby zostało zapamiętane a w kliencie pojawiła się potrzeba powrotu do
+                            niego.
                         </p>
-                        <NavLink to="/realizacje-wnetrza-publiczne" className="realizations-page__button button">zobacz więcej</NavLink>
+                        <NavLink to="/realizacje-wnetrza-publiczne" className="realizations-page__button button">zobacz
+                            więcej</NavLink>
                     </div>
                 </div>
             </div>

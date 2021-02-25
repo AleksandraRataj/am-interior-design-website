@@ -10,7 +10,11 @@ const Navigation = () => {
                 {name: "wnętrza publiczne", path: "/realizacje-wnetrza-publiczne", subMenuItems: []},
             ]
         },
-        {name: "projekty", path: "/projekty", subMenuItems: []},
+        {name: "projekty", path: "/projekty", subMenuItems: [
+                {name: "projekty prywatne", path: "/projekty-wnetrza-prywatne", subMenuItems: []},
+                {name: "projekty publiczne", path: "/projekty-wnetrza-publiczne", subMenuItems: []},
+            ]
+        },
         {name: "fotografia", path: "/fotografia", subMenuItems: []},
         {name: "referencje", path: "/referencje", subMenuItems: []},
         {name: "współpraca", path: "/wspolpraca", subMenuItems: []},

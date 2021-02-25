@@ -1,8 +1,13 @@
-import React from "react";
+import React, {useLayoutEffect} from "react";
 
 import "../styles/ContactPage.css";
 
 const ContactPage = () => {
+
+    useLayoutEffect(() => {
+        window.scrollTo(0,0)
+    });
+
     return(
         <div className="contact-page">
             <div className="contact-page__wrapper">

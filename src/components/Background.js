@@ -5,10 +5,15 @@ import '../styles/Background.css';
 const Background = () => {
 
     const slidesPaths = [
-        {path: "/images/backgrounds/bgc1.jpg"},
-        {path: "/images/backgrounds/bgc2.jpg"},
-        {path: "/images/backgrounds/bgc3.jpg"},
-        {path: "/images/backgrounds/bgc4.jpg"}
+        {path: "/images/backgrounds/01.jpg"},
+        {path: "/images/backgrounds/02.jpg"},
+        {path: "/images/backgrounds/03.jpg"},
+        {path: "/images/backgrounds/04.jpg"},
+        {path: "/images/backgrounds/05.jpg"},
+        {path: "/images/backgrounds/06.jpg"},
+        {path: "/images/backgrounds/07.jpg"},
+        {path: "/images/backgrounds/08.jpg"},
+        {path: "/images/backgrounds/09.jpg"},
     ];
 
     const slides = slidesPaths.map((slide, index) => {
