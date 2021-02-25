@@ -1,12 +1,13 @@
 import React, {useLayoutEffect} from "react";
+import Data from "../data/projectsPrivate.json";
 import {Link} from "react-router-dom";
-import Data from "../data/realizationsPrivate.json";
 import Footer from "../layouts/Footer";
+
 import "../styles/RealizationsProjects.css";
 import {motion} from "framer-motion";
 import Arrow from "../components/Arrow";
 
-const RealizationsPrivatePage = () => {
+const ProjectsPrivatePage = () => {
 
     useLayoutEffect(() => {
         window.scrollTo(0, 0)
@@ -23,13 +24,11 @@ const RealizationsPrivatePage = () => {
             <div className="realizations-private-page__wrapper-element-image">
                 <img className="realizations-private-page__element-image" src={item.bannerImage} alt=""/>
             </div>
-
             <div className="realizations-private-page__wrapper-element-info">
                 <h3 className="realizations-private-page__element-info-title subtitle">{item.title}</h3>
                 <p className="realizations-private-page__element-info-description small-text">{item.shortDescription.length > 0 ? item.shortDescription : item.description}</p>
-                <Link className="realizations-private-page__button button" to={`/realizacje-wnetrza-prywatne/${item.id}`}>zobacz więcej</Link>
+                <Link className="realizations-private-page__button button" to={`/projekty-wnetrza-prywatne/${item.id}`}>zobacz więcej</Link>
             </div>
-
         </motion.div>
     ))
 
@@ -37,7 +36,7 @@ const RealizationsPrivatePage = () => {
         <div className="realizations-private-page">
             <Arrow/>
             <div className="realizations-private-page__wrapper">
-                <h1 className="realizations-private-page__page-title page-title">Prywatne realizacje</h1>
+                <h1 className="realizations-private-page__page-title page-title">Projekty prywatne</h1>
                 <div className="realizations-private-page__list-wrapper">
                     {list}
                 </div>
@@ -47,4 +46,4 @@ const RealizationsPrivatePage = () => {
     );
 }
 
-export default RealizationsPrivatePage;
+export default ProjectsPrivatePage;
