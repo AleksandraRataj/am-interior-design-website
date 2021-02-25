@@ -1,0 +1,179 @@
+[
+  {
+    "id": 1,
+    "title": "Przestrzeń wspólna w apartamentowcu w Cyhrli",
+    "shortDescription": "",
+    "description": "Wizualizacje części wspólnej (korytarza i klatki schodowej) apartamentowca w Cyhrli pod Zakopanym. Nowoczesny i industrialny styl w detalach nawiązuje do lokalizacji w górach, jak tapeta czy układ desek na ścianach. Surowy sufit podkreśla industrialny charakter wnętrza, a oświetlenie w czarnych oprawach idealne się z nim komponuje. Jednak największa wartość to widoki za licznymi przeszkleniami.",
+    "interiorType": "apartamentowiec",
+    "yardage": "90",
+    "style": "industrialny",
+    "designer": "Aleksandra Michalak",
+    "visualizations": "Syntax Marcin Klimek",
+
+    "bannerImage": "/images/projectsPublic/01_Przestrzeń wspólna w apartamentowcu w Cyhrli/01_strona.jpg",
+    "images": [
+      {"id": 0, "path": "/images/projectsPublic/01_Przestrzeń wspólna w apartamentowcu w Cyhrli/01_strona.jpg"},
+      {"id": 2,"path": "/images/projectsPublic/01_Przestrzeń wspólna w apartamentowcu w Cyhrli/02.jpg"},
+      {"id": 3,"path": "/images/projectsPublic/01_Przestrzeń wspólna w apartamentowcu w Cyhrli/03.jpg"},
+      {"id": 4,"path": "/images/projectsPublic/01_Przestrzeń wspólna w apartamentowcu w Cyhrli/04.jpg"},
+      {"id": 5,"path": "/images/projectsPublic/01_Przestrzeń wspólna w apartamentowcu w Cyhrli/05.jpg"},
+      {"id": 6,"path": "/images/projectsPublic/01_Przestrzeń wspólna w apartamentowcu w Cyhrli/06.jpg"},
+      {"id": 7,"path": "/images/projectsPublic/01_Przestrzeń wspólna w apartamentowcu w Cyhrli/07.jpg"}
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Apartament 57m2 w Cyhrli",
+    "shortDescription": "",
+    "description": "Wizualizacje pokazowego apartamentu z pięknym widokiem na Tatry. Całość utrzymana w nowoczesnym stylu z akcentami podkreślającymi lokalizacje apartamentowca. Elegancji dodają złote lampy a wzrok przyciąga piękna tapeta za telewizorem. Jednak najważniejszym elementem wnętrz są liczne przeszklenia i roztaczający się za nimi widok. ",
+    "interiorType": "apartament",
+    "yardage": "57",
+    "style": "nowoczesny, z elementami glamour",
+    "designer": "Aleksandra Michalak",
+    "visualizations": "Syntax Marcin Klimek",
+
+    "bannerImage": "/images/projectsPublic/02_Apartament 57m2 w Cyhrli/01_strona.jpg",
+    "images": [
+      {"id": 0, "path": "/images/projectsPublic/02_Apartament 57m2 w Cyhrli/01_strona.jpg"},
+      {"id": 1,"path": "/images/projectsPublic/02_Apartament 57m2 w Cyhrli/02.jpg"},
+      {"id": 2,"path": "/images/projectsPublic/02_Apartament 57m2 w Cyhrli/03.jpg"},
+      {"id": 3,"path": "/images/projectsPublic/02_Apartament 57m2 w Cyhrli/04.jpg"},
+      {"id": 4,"path": "/images/projectsPublic/02_Apartament 57m2 w Cyhrli/05.jpg"},
+      {"id": 5,"path": "/images/projectsPublic/02_Apartament 57m2 w Cyhrli/06.jpg"},
+      {"id": 6,"path": "/images/projectsPublic/02_Apartament 57m2 w Cyhrli/07.jpg"},
+      {"id": 7,"path": "/images/projectsPublic/02_Apartament 57m2 w Cyhrli/08.jpg"},
+      {"id": 8,"path": "/images/projectsPublic/02_Apartament 57m2 w Cyhrli/09.jpg"},
+      {"id": 9,"path": "/images/projectsPublic/02_Apartament 57m2 w Cyhrli/10.jpg"},
+      {"id": 10,"path": "/images/projectsPublic/02_Apartament 57m2 w Cyhrli/11.jpg"},
+      {"id": 11,"path": "/images/projectsPublic/02_Apartament 57m2 w Cyhrli/12.jpg"}
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Apartament 70m2 w Cyhrli",
+    "shortDescription": "",
+    "description": "Nowoczesna przestrzeń w przyziemiu apartamentowca w Cyhrli. Bliskość gór jest odczuwalna we wnętrzach tego apartamentu. Ale daleko tutaj do kiczowatej góralszczyzny – formy są nowoczesne a materiały naturalne. Odważne kolory w łazience i w dodatkach przestrzeni dziennej dodają wnętrzu niepowtarzalności.",
+    "interiorType": "apartament",
+    "yardage": "70",
+    "style": "nowoczesny",
+    "designer": "Aleksandra Michalak",
+    "visualizations": "Syntax Marcin Klimek",
+
+    "bannerImage": "/images/projectsPublic/03_Apartament 70m2 w Cyhrli/01_strona.jpg",
+    "images": [
+      {"id": 0, "path": "/images/projectsPublic/03_Apartament 70m2 w Cyhrli/01_strona.jpg"},
+      {"id": 1,"path": "/images/projectsPublic/03_Apartament 70m2 w Cyhrli/02.jpg"},
+      {"id": 2,"path": "/images/projectsPublic/03_Apartament 70m2 w Cyhrli/03.jpg"},
+      {"id": 3,"path": "/images/projectsPublic/03_Apartament 70m2 w Cyhrli/04.jpg"},
+      {"id": 4,"path": "/images/projectsPublic/03_Apartament 70m2 w Cyhrli/05.jpg"},
+      {"id": 5,"path": "/images/projectsPublic/03_Apartament 70m2 w Cyhrli/06.jpg"},
+      {"id": 6,"path": "/images/projectsPublic/03_Apartament 70m2 w Cyhrli/07.jpg"},
+      {"id": 7,"path": "/images/projectsPublic/03_Apartament 70m2 w Cyhrli/08.jpg"}
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Apartament 40m2 w Cyhrli",
+    "shortDescription": "",
+    "description": "Kolejny z apartamentów pokazowych na Podhalu. Tym razem nieco mniejszy, utrzymany w stylu industrialnym nawiązującym do części wspólnej apartamentowca. Ważnym elementem wnętrz jest tutaj drewno pokazane w różnej formie ale spójne z wnętrzem i jego klimatem. Nie zabrakło oczywiście powierzchni betonowych i czarnych lamp na ich powierzchni.",
+    "interiorType": "apartament",
+    "yardage": "40",
+    "style": "industrialny",
+    "designer": "Aleksandra Michalak",
+    "visualizations": "Syntax Marcin Klimek ",
+
+    "bannerImage": "/images/projectsPublic/04_Apartament 40m2 w Cyhrli/01_strona.jpg",
+    "images": [
+      {"id": 0, "path": "/images/projectsPublic/04_Apartament 40m2 w Cyhrli/01_strona.jpg"},
+      {"id": 1,"path": "/images/projectsPublic/04_Apartament 40m2 w Cyhrli/02.jpg"},
+      {"id": 2,"path": "/images/projectsPublic/04_Apartament 40m2 w Cyhrli/03.jpg"},
+      {"id": 3,"path": "/images/projectsPublic/04_Apartament 40m2 w Cyhrli/04.jpg"},
+      {"id": 4,"path": "/images/projectsPublic/04_Apartament 40m2 w Cyhrli/05.jpg"},
+      {"id": 5,"path": "/images/projectsPublic/04_Apartament 40m2 w Cyhrli/06.jpg"},
+      {"id": 6,"path": "/images/projectsPublic/04_Apartament 40m2 w Cyhrli/07.jpg"}
+    ]
+  },
+  {
+    "id": 5,
+    "title": "SPA w apartamentowcu w Cyhrli",
+    "shortDescription": "",
+    "description": "Któż z nas nie chciałby się znaleźć w takiej strefie wellness? Na niewielkiej powierzchni udało się zaprojektować dwie sauny (infrared i suchą), jacuzzi i strefę wypoczynkową z leżakami. Całość utrzymana w industrialnym stylu, nawiązującym do przestrzeni wspólnej apartamentowca. Czarne halogeny w szynach pięknie prezentują się na surowym, niewykończonym suficie.",
+    "interiorType": "lokal użytkowy",
+    "yardage": "70",
+    "style": "industrialny",
+    "designer": "Aleksandra Michalak",
+    "visualizations": "Syntax Marcin Klimek ",
+
+    "bannerImage": "/images/projectsPublic/05_SPA w apartamentowcu w Cyhrli/01_strona.jpg",
+    "images": [
+      {"id": 0, "path": "/images/projectsPublic/05_SPA w apartamentowcu w Cyhrli/01_strona.jpg"},
+      {"id": 1,"path": "/images/projectsPublic/05_SPA w apartamentowcu w Cyhrli/02.jpg"},
+      {"id": 2,"path": "/images/projectsPublic/05_SPA w apartamentowcu w Cyhrli/03.jpg"},
+      {"id": 3,"path": "/images/projectsPublic/05_SPA w apartamentowcu w Cyhrli/04.jpg"}
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Barber House w Krakowie",
+    "shortDescription": "",
+    "description": "Wizualizacje wnętrza, w którym mieści się miejsce pracy krakowskich barberów. Pewne elementy wnętrza o takim przeznaczeniu są niezbędne, jak męskie atrybuty w postaci plakatów, czy „trofeum” wiszącego nad wejściem. Inwestorom zależało na industrialnym, surowym klimacie, w którym dobrze poczuje się każdy mężczyzna. Wszystko więc w tym wnętrzu jest surowe: cegła, drewno, metalowe elementy.",
+    "interiorType": "lokal usługowy",
+    "yardage": "80",
+    "style": "industrialny",
+    "designer": "Aleksandra Michalak",
+    "cooperation": "Zofia Pregler",
+
+    "bannerImage": "/images/projectsPublic/06_Barber House w Krakowie/01_strona.jpg",
+    "images": [
+      {"id": 0, "path": "/images/projectsPublic/06_Barber House w Krakowie/01_strona.jpg"},
+      {"id": 1,"path": "/images/projectsPublic/06_Barber House w Krakowie/02.jpg"},
+      {"id": 2,"path": "/images/projectsPublic/06_Barber House w Krakowie/03.jpg"},
+      {"id": 3,"path": "/images/projectsPublic/06_Barber House w Krakowie/04.jpg"},
+      {"id": 4,"path": "/images/projectsPublic/06_Barber House w Krakowie/05.jpg"},
+      {"id": 5,"path": "/images/projectsPublic/06_Barber House w Krakowie/06.jpg"},
+      {"id": 7,"path": "/images/projectsPublic/06_Barber House w Krakowie/08.jpg"},
+      {"id": 8,"path": "/images/projectsPublic/06_Barber House w Krakowie/09.jpg"},
+      {"id": 10,"path": "/images/projectsPublic/06_Barber House w Krakowie/11.jpg"}
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Gabinet dentystyczny w Krakowie",
+    "shortDescription": "",
+    "description": "Naszym zadaniem podczas pracy projektowej było odświeżenie istniejącego gabinetu dentystycznego. Szczególnie skupiliśmy się na poczekalni, która przeszła gruntowną metamorfozę. Początkowo „straszyła” ciemną boazerią, zaproponowaliśmy więc świeżą, ożywczą kolorystykę z elementami, które będą działać kojąco na zestresowanych pacjentów. ",
+    "interiorType": "lokal usługowy",
+    "yardage": "40",
+    "style": "nowoczesny ",
+    "designer": "Aleksandra Michalak",
+
+    "bannerImage": "/images/projectsPublic/07_Gabinet dentystyczny w Krakowie/01_strona.jpg",
+    "images": [
+      {"id": 0, "path": "/images/projectsPublic/07_Gabinet dentystyczny w Krakowie/01_strona.jpg"},
+      {"id": 1,"path": "/images/projectsPublic/07_Gabinet dentystyczny w Krakowie/02_hol.jpg"},
+      {"id": 2,"path": "/images/projectsPublic/07_Gabinet dentystyczny w Krakowie/03_hol.jpg"},
+      {"id": 3,"path": "/images/projectsPublic/07_Gabinet dentystyczny w Krakowie/04_gabinet.jpg"},
+      {"id": 5,"path": "/images/projectsPublic/07_Gabinet dentystyczny w Krakowie/06_gabinet.jpg"},
+      {"id": 6,"path": "/images/projectsPublic/07_Gabinet dentystyczny w Krakowie/07_gabinet.jpg"}
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Pub w pensjonacie w Żmiącej",
+    "shortDescription": "",
+    "description": "Wizualizacje wnętrza pubu, w którym odczuć można styl kolonialny, czyli klimat podróżniczy i przytulny. Pub mieści się w piwnicach pensjonatu, dlatego inwestorom zależało aby ów piwniczną atmosferę zachować, przy zachowaniu odpowiedniego oświetlenia i funkcjonalności.",
+    "interiorType": "lokal usługowy",
+    "yardage": "70",
+    "style": "kolonialny",
+    "designer": "Aleksandra Michalak",
+    "visualizations": "Malmedia - Profesjonalne wizualizacje",
+
+    "bannerImage": "/images/projectsPublic/08_Pub w pensjonacie w Żmiącej/01_strona.jpg",
+    "images": [
+      {"id": 0, "path": "/images/projectsPublic/08_Pub w pensjonacie w Żmiącej/01_strona.jpg"},
+      {"id": 1,"path": "/images/projectsPublic/08_Pub w pensjonacie w Żmiącej/1.jpg"},
+      {"id": 2,"path": "/images/projectsPublic/08_Pub w pensjonacie w Żmiącej/2.jpg"},
+      {"id": 3,"path": "/images/projectsPublic/08_Pub w pensjonacie w Żmiącej/4.jpg"},
+      {"id": 4,"path": "/images/projectsPublic/08_Pub w pensjonacie w Żmiącej/5.jpg"}
+    ]
+  }
+]
