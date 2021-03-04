@@ -1,4 +1,4 @@
-import React, {useLayoutEffect} from "react";
+import React from "react";
 import Data from "../data/realizationsPublic.json";
 import {Link} from "react-router-dom";
 import Footer from "../layouts/Footer";
@@ -7,10 +7,6 @@ import {motion} from "framer-motion";
 import Arrow from "../components/Arrow";
 
 const RealizationsPublicPage = () => {
-
-    useLayoutEffect(() => {
-        window.scrollTo(0, 0)
-    });
 
     const list = Data.map(item => (
         <motion.div

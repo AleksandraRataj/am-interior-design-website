@@ -4,8 +4,6 @@ import {BrowserRouter} from "react-router-dom";
 import Navigation from "./Navigation";
 import Page from "./Page";
 
-import "../styles/App.css";
-
 function App() {
     return (
         <BrowserRouter>

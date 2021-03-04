@@ -1,0 +1,80 @@
+@import "App.scss";
+
+.cooperation-page {
+
+  width: 100%;
+  height: 100%;
+
+  @include padding-pages;
+
+  &__title{
+    margin-bottom: 1rem;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  &__item-wrapper {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 18vw;
+    height: 13.5vw;
+  }
+
+  &__link {
+    width: fit-content;
+    height: fit-content;
+    justify-self: center;
+    align-self: center;
+    transition: .2s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+}
+
+@media screen and (max-width: $medium){
+  .cooperation-page {
+
+    @include padding-pages;
+
+    &__item-wrapper {
+      width: 25vw;
+      height: 15vw;
+    }
+
+    &__link {
+      width: fit-content;
+      height: fit-content;
+      justify-self: center;
+      align-self: center;
+      transition: .2s;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    &__image {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+  }
+}

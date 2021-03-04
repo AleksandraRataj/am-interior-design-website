@@ -1,6 +1,6 @@
 import React from 'react';
 import "../styles/Modal.css";
-import {motion} from 'framer-motion';
+import {AnimatePresence, motion} from 'framer-motion';
 
 const Modal = (
     {
@@ -38,21 +38,25 @@ const Modal = (
         }
     }
 
-    return(
-        <motion.div
-            className="backdrop"
-            onClick={handleClick}
-            initial={{opacity: 0}}
-            animate={{opacity: 1}}
-            exit={{opacity: 0}}
+    console.log(selectedImage);
 
-        >
-            <img className="backdrop__image" src={selectedImage.path} alt=""/>
-            <div className="backdrop__icon-wrapper">
-                <i className="backdrop__icon fas fa-arrow-circle-left" onClick={() => handleClickPrev()}/>
-                <i className="backdrop__icon fas fa-arrow-circle-right" onClick={() => handleClickNext()}/>
-            </div>
-        </motion.div>
+    return(
+        <AnimatePresence>
+            <motion.div
+                className="backdrop"
+                onClick={handleClick}
+                initial={{opacity: 0}}
+                animate={{opacity: 1}}
+                transition={{delay: 0.2}}
+                exit={{opacity: 0}}
+            >
+                <img className="backdrop__image" src={selectedImage.path} alt=""/>
+                <div className="backdrop__icon-wrapper">
+                    <i className="backdrop__icon fas fa-arrow-circle-left" onClick={() => handleClickPrev()}/>
+                    <i className="backdrop__icon fas fa-arrow-circle-right" onClick={() => handleClickNext()}/>
+                </div>
+            </motion.div>
+        </AnimatePresence>
     )
 }
 

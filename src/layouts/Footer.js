@@ -13,9 +13,9 @@ const Footer = () => {
                     <img className="footer__logo-img" src="/images/logo/logoBlack.png" alt=""/>
                     <p className="footer__logo-text small-text">Zapraszamy na nasze media społecznościowe.</p>
                     <div className="footer__icons">
-                        <a className="footer__link" href="https://www.facebook.com/PogotowieProjektowe"><i className="fab fa-facebook-square  footer__icon"></i></a>
-                        <a className="footer__link" href="https://www.instagram.com/aw_aleksandramichalak/"><i className="fab fa-instagram footer__icon"></i></a>
-                        <a className="footer__link" href="mailto:aleksandra.s.michalak@gmail.com"><i className="fas fa-envelope-open-text footer__icon"></i></a>
+                        <a className="footer__link" target="_blank" href="https://www.facebook.com/PogotowieProjektowe"><i className="fab fa-facebook-square  footer__icon"></i></a>
+                        <a className="footer__link" target="_blank" href="https://www.instagram.com/aw_aleksandramichalak/"><i className="fab fa-instagram footer__icon"></i></a>
+                        <a className="footer__link" target="_blank" href="mailto:aleksandra.s.michalak@gmail.com"><i className="fas fa-envelope footer__icon"></i></a>
                     </div>
                 </div>
                 <div className="footer__contact-info">

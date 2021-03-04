@@ -1,4 +1,4 @@
-import React, {useLayoutEffect} from "react";
+import React from "react";
 import {NavLink} from "react-router-dom";
 
 import '../styles/RealizationsProjectsPages.css';
@@ -6,10 +6,6 @@ import Footer from "../layouts/Footer";
 import {motion} from "framer-motion";
 
 const ProjectsPage = () => {
-
-    useLayoutEffect(() => {
-        window.scrollTo(0,0)
-    });
 
     return (
         <div className="projects-page">

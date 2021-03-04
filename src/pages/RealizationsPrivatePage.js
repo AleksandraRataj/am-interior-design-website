@@ -1,4 +1,4 @@
-import React, {useLayoutEffect} from "react";
+import React from "react";
 import {Link} from "react-router-dom";
 import Data from "../data/realizationsPrivate.json";
 import Footer from "../layouts/Footer";
@@ -7,10 +7,6 @@ import {motion} from "framer-motion";
 import Arrow from "../components/Arrow";
 
 const RealizationsPrivatePage = () => {
-
-    useLayoutEffect(() => {
-        window.scrollTo(0, 0)
-    });
 
     const list = Data.map(item => (
         <motion.div
@@ -21,7 +17,9 @@ const RealizationsPrivatePage = () => {
             key={item.id}
         >
             <div className="realizations-private-page__wrapper-element-image">
-                <img className="realizations-private-page__element-image" src={item.bannerImage} alt=""/>
+                <Link to={`/realizacje-wnetrza-prywatne/${item.id}`}>
+                    <img className="realizations-private-page__element-image" src={item.bannerImage} alt=""/>
+                </Link>
             </div>
 
             <div className="realizations-private-page__wrapper-element-info">

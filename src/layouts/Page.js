@@ -18,10 +18,12 @@ import ProjectsPrivatePage from "../pages/ProjectsPrivatePage";
 import ProjectsPublicPage from "../pages/ProjectsPublicPage";
 import ProjectPrivatePage from "../pages/ProjectPrivatePage";
 import ProjectPublicPage from "../pages/ProjectPublicPage";
+import ScrollToTop from "../components/ScrollToTop";
 
 const Page = () => {
     return(
         <>
+            <ScrollToTop/>
             <Switch>
                 <Route exact path="/" component={HomePage}/>
                 <Route exact path="/onas" component={AboutPage}/>

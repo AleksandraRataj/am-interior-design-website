@@ -15,8 +15,6 @@ const Arrow = () => {
         }
     }, []);
 
-    console.log(offset)
-
     const showArrow = offset > 700;
 
     return (

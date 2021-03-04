@@ -1,37 +1,15 @@
 @import "App.scss";
 
-$width-image-landscape: calc((100vw / 2) - 180px);
-$height-image-landscape: calc(100vh / 2.6);
-
-$width-image-portrait: 60vw;
-$height-image-portrait: calc(100vh / 4);
-
 @mixin projects-realizations-images {
   &__img {
-    &--private {
-      width: $width-image-landscape;
-      height: $height-image-landscape;
-      max-height: 400px;
-      min-width: 100px;
-      background-position: center;
-      background-size: cover;
-      transition: .3s ease-in-out;
-      opacity: 0.85;
-
-      &:hover {
-        opacity: 1;
-      }
-    }
-
+    &--private,
     &--public {
-      width: $width-image-landscape;
-      height: $height-image-landscape;
-      max-height: 400px;
-      min-width: 100px;
-      background-position: center;
+      width: 100%;
+      height: 100%;
+      background-position: bottom;
       background-size: cover;
-      transition: .3s ease-in-out;
-      opacity: 0.85;
+      opacity: 0.9;
+      transition: .2s;
 
       &:hover {
         opacity: 1;
@@ -40,8 +18,8 @@ $height-image-portrait: calc(100vh / 4);
   }
 }
 
-
 .realizations-page, .projects-page {
+
   height: auto;
   overflow: hidden;
   background-color: $bright-background-color;
@@ -50,16 +28,9 @@ $height-image-portrait: calc(100vh / 4);
     @include margin-pages;
   }
 
-  &__description {
-    margin: 25px 0;
-    line-height: 25px;
-    text-align: justify;
-  }
-
   &__elements-wrapper {
     display: flex;
     justify-content: space-evenly;
-    align-items: stretch;
     margin: 30px 20px;
   }
 
@@ -70,10 +41,8 @@ $height-image-portrait: calc(100vh / 4);
   }
 
   &__img-wrapper {
-    width: $width-image-landscape;
-    height: $height-image-landscape;
-    max-height: 400px;
-    min-width: 100px;
+    width: 38vw;
+    height: calc(38vw * 0.5625);
     overflow: hidden;
   }
 
@@ -88,7 +57,8 @@ $height-image-portrait: calc(100vh / 4);
   }
 
   &__small-text {
-    width: $width-image-landscape;
+    width: 38vw;
+    line-height: 20px;
     text-align: justify;
     margin-bottom: 10px;
   }
@@ -124,10 +94,30 @@ $height-image-portrait: calc(100vh / 4);
 
 @media screen and (max-width: $xxxlarge) and (orientation: landscape) {
 
-  .realizations-page {
+  .realizations-page,
+  .projects-page{
+
+    &__elements-wrapper {
+      display: flex;
+      justify-content: space-evenly;
+      margin: 15px 20px;
+    }
+
+    &__img-wrapper {
+      width: 40vw;
+      height: calc(38vw * 0.5625);
+      overflow: hidden;
+    }
 
     &__subtitle {
-      margin: 14px 0;
+      margin: 10px 0;
+    }
+
+    &__small-text {
+      width: 40vw;
+      font-size: 13px;
+      line-height: 17px;
+      margin-bottom: 0;
     }
   }
 }
@@ -136,11 +126,15 @@ $height-image-portrait: calc(100vh / 4);
   .realizations-page {
 
     &__elements-wrapper {
-      margin: 20px 20px;
+      margin: 20px 0;
     }
 
     &__subtitle {
       margin: 12px 0;
+    }
+
+    &__small-text {
+      line-height: 16px;
     }
   }
 }
@@ -152,32 +146,17 @@ $height-image-portrait: calc(100vh / 4);
     &__elements-wrapper {
       flex-direction: column;
       justify-content: space-between;
-      margin: 50px 20px;
+      margin: 20px 20px;
     }
 
     &__img-wrapper {
-      width: $width-image-portrait;
-      height: auto;
-      max-height: 300px;
-      min-width: 200px;
+      width: 60vw;
+      height: calc(60vw * 0.5625);
       overflow: hidden;
     }
 
-    &__img {
-      &--private {
-        width: $width-image-portrait;
-        height: $height-image-portrait;
-        max-height: 300px;
-        min-width: 200px;
-      }
-
-      &--public {
-        width: $width-image-portrait;
-        height: $height-image-portrait;
-        max-height: 300px;
-        min-width: 200px;
-        margin-top: 20px;
-      }
+    &__element-wrapper {
+      margin-bottom: 20px;
     }
 
     &__subtitle {
@@ -186,7 +165,8 @@ $height-image-portrait: calc(100vh / 4);
     }
 
     &__small-text {
-      width: $width-image-portrait;
+      width: 60vw;
+      line-height: 16px;
       margin-bottom: 16px;
     }
   }
@@ -199,36 +179,19 @@ $height-image-portrait: calc(100vh / 4);
     &__elements-wrapper {
       flex-direction: column;
       justify-content: space-between;
-      margin: 20px 20px;
+      margin: 30px 0 10px 0;
+    }
+
+    &__element-wrapper {
+      margin-bottom: 10px;
     }
 
     &__img-wrapper {
-      width: $width-image-portrait;
-      height: $height-image-portrait;
-      max-height: 300px;
-      min-height: 200px;
-      min-width: 200px;
+      width: 70vw;
+      height: calc(70vw * 0.5625);
       overflow: hidden;
     }
 
-    &__img {
-      &--private {
-        width: $width-image-portrait;
-        height: $height-image-portrait;
-        max-height: 300px;
-        min-height: 200px;
-        min-width: 200px;
-      }
-
-      &--public {
-        width: $width-image-portrait;
-        height: $height-image-portrait;
-        max-height: 300px;
-        min-width: 200px;
-        min-height: 200px;
-        margin-top: 20px;
-      }
-    }
 
     &__subtitle {
       margin: 14px 0;
@@ -236,24 +199,10 @@ $height-image-portrait: calc(100vh / 4);
     }
 
     &__small-text {
-      width: $width-image-portrait;
+      width: 70vw;
       margin-bottom: 14px;
 
     }
   }
 }
 
-@media screen and (max-width: $medium) and (orientation: portrait) {
-
-  .realizations-page {
-
-    &__elements-wrapper {
-      margin: 30px 20px;
-    }
-
-    &__small-text {
-      width: $width-image-portrait;
-      margin-bottom: 10px;
-    }
-  }
-}

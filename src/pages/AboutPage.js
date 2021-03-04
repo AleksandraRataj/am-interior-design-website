@@ -2,15 +2,16 @@ import React, {useLayoutEffect} from "react";
 import Footer from "../layouts/Footer";
 
 import "../styles/AboutPage.css";
+import {motion} from "framer-motion";
 
 const AboutPage = () => {
 
-    useLayoutEffect(() => {
-        window.scrollTo(0,0)
-    });
-
     return (
-        <div className="about-page">
+        <motion.div
+            initial={{opacity: 0}}
+            animate={{opacity: 1}}
+            transition={{delay: 0.2}}
+            className="about-page">
             <div className="about-page__wrapper">
                 <h1 className="about-page__title page-title">o nas</h1>
                 <div className="about-page__author-info">
@@ -93,7 +94,7 @@ const AboutPage = () => {
                 </p>
             </section>
             <Footer/>
-        </div>
+        </motion.div>
     );
 }
 

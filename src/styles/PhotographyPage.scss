@@ -1,40 +1,40 @@
 @import "App.scss";
 
 .photo-page {
-  height: auto;
-  overflow: hidden;
+
+  width: 100%;
+  overflow-x: hidden;
   background-color: $dark-background-color;
-  color: $bright-font-color;
 
-  &__page-title {
-    padding-top: 120px !important;
-  }
-
-  &__wrapper {
+  &__background-wrapper {
+    position: relative;
     height: 100vh;
     background-image: url("/src/data/images/photographyBgc.jpg");
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-
   }
 
-  &__small-text {
-    width: 60%;
-    text-align: center;
-    margin: 20px auto;
+  &__page-title {
+    color: $bright-font-color;
+  }
+
+  &__flex-wrapper {
+    @include padding-pages
   }
 
   &__author-info {
     display: flex;
     position: absolute;
-    bottom: 80px;
-    margin: 60px 80px 0 80px;
+    bottom: 10%;
+    width: 91%;
+    color: $bright-font-color;
   }
 
   &__author-image {
-    min-width: 325px;
-    height: 325px;
+    margin: auto;
+    min-width: 17vw;
+    height: 17vw;
     background-image: url("/src/data/images/ŁukaszMichalak.jpg");
     background-size: cover;
     background-position: center right;
@@ -49,12 +49,507 @@
     margin-left: 50px;
   }
 
-  &__author-story {
+  &__author-story,
+  &__text {
     text-align: justify;
   }
 
-  &__text{
-    text-align: justify;
+  &__wrapper {
+    @include padding-pages;
+    color: $bright-font-color;
   }
 
+  &__product-image {
+    width: 17vw;
+    height: 17vw;
+    min-width: 17vw;
+    min-height: 17vw;
+    background-size: cover;
+    justify-self: center;
+    align-self: center;
+  }
+
+  &__products-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 8rem;
+
+    .photo-page__product {
+      margin-bottom: 5rem;
+      width: 48%;
+      height: auto;
+      display: flex;
+      justify-content: space-between;
+
+      &:nth-of-type(odd) {
+        margin-right: 2rem;
+      }
+
+      &:nth-of-type(1) {
+        .photo-page__product-image {
+          background-image: url("/src/data/images/fot_wnetrz.jpg");
+          background-position: top center;
+        }
+      }
+
+      &:nth-of-type(2) {
+        .photo-page__product-image {
+          background-image: url("/src/data/images/fot_arch.jpg");
+          background-position: center;
+        }
+      }
+
+      &:nth-of-type(3) {
+        .photo-page__product-image {
+          background-image: url("/src/data/images/fot_prod.jpg");
+          background-position: center bottom;
+        }
+      }
+
+      &:nth-of-type(4) {
+        .photo-page__product-image {
+          background-image: url("/src/data/images/fot_slub.jpg");
+          background-position: center bottom;
+        }
+      }
+    }
+  }
+
+  &__product-text {
+    margin: auto 0 auto 2rem;
+    color: $bright-font-color;
+  }
+
+  &__product-description {
+    font-size: 15px !important;
+    line-height: 24px;
+  }
+
+  &__contact-wrapper {
+    display: flex;
+    margin: 4rem auto;
+  }
+
+  &__logo {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-content: center;
+  }
+
+  &__image {
+    width: 20vw;
+    align-self: center;
+  }
+
+  &__small-text {
+    width: fit-content;
+    text-align: left;
+    margin: 3rem auto;
+  }
+
+  &__contact {
+    width: 50%;
+  }
+
+  &__icon {
+    margin-right: 2rem;
+    transition: .2s ease-in-out;
+  }
+
+  &__contact-link {
+    display: block;
+    width: fit-content;
+    font-size: 2.8rem;
+    font-family: $main-font-family;
+    text-decoration: none;
+    line-height: 50px;
+    color: $bright-font-color;
+    transition: .2s ease-in-out;
+
+    &:hover {
+      color: #5b81a2;
+
+      .photo-page__icon {
+        color: #5b81a2;
+      }
+
+    }
+  }
+}
+
+@media screen and (max-width: $xxlarge) {
+
+  .photo-page {
+
+    &__author-info {
+      bottom: 10%;
+      width: 89%;
+    }
+
+    &__products-wrapper {
+      margin-top: 6rem;
+
+      .photo-page__product {
+        margin-bottom: 4rem;
+        width: 49%;
+        &:nth-of-type(odd) {
+          margin-right: 1rem;
+        }
+      }
+    }
+
+    &__product {
+        margin-bottom: 4rem;
+        width: 50%;
+        &:nth-of-type(odd) {
+          margin-right: 1rem;
+        }
+    }
+
+    &__product-description {
+      font-size: 13px !important;
+      line-height: 20px;
+    }
+
+    &__contact-link {
+      font-size: 2.6rem;
+      line-height: 50px;
+    }
+  }
+}
+
+@media screen and (max-width: $xlarge) {
+
+  .photo-page {
+
+    &__author-info {
+      width: 90%;
+    }
+
+    &__product-image {
+      width: 20vw;
+      height: 20vw;
+      min-width: 20vw;
+      min-height: 20vw;
+    }
+
+    &__products-wrapper {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      margin-top: 6rem;
+
+      .photo-page__product {
+        margin-bottom: 4rem;
+        width: 100%;
+
+        &:nth-of-type(odd) {
+          margin-right: 0;
+        }
+      }
+    }
+
+    &__product-text {
+      margin: auto 0 auto 3rem;
+    }
+
+    &__product-description {
+      font-size: 14px !important;
+      line-height: 20px;
+      text-align: justify;
+    }
+
+    &__image {
+      width: 26vw;
+    }
+
+    &__contact-link {
+      font-size: 2rem;
+      line-height: 40px;
+    }
+  }
+}
+
+@media screen and (max-width: $large) {
+
+  .photo-page {
+
+    &__product-text {
+      margin: auto 0 auto 3rem;
+    }
+
+    &__product-description {
+      font-size: 13px !important;
+      line-height: 20px;
+    }
+
+    &__image {
+      width: 26vw;
+    }
+
+    &__contact-link {
+      font-size: 1.8rem;
+      line-height: 40px;
+    }
+  }
+}
+
+@media screen and (max-width: $medium) and (orientation: portrait){
+
+  .photo-page {
+
+    &__author-info {
+      position: absolute;
+      bottom: 10%;
+      width: 87%;
+      margin: auto;
+    }
+
+    &__author-story {
+      width: 100%;
+    }
+
+    &__info-wrapper {
+      margin-left: 2rem;
+    }
+
+    &__product-text {
+      margin: auto 0 auto 2rem;
+    }
+
+    &__product-description {
+      font-size: 13px !important;
+      line-height: 20px;
+      text-align: left;
+    }
+
+    &__contact-link {
+      font-size: 1.4rem;
+      line-height: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: $small) and (orientation: portrait){
+
+  .photo-page {
+
+    &__author-info {
+      bottom: 5%;
+      width: 88%;
+      text-align: left;
+    }
+
+    &__author-story{
+      line-height: 16px !important;
+    }
+
+    &__author-story,
+    &__text {
+      text-align: left;
+    }
+
+    &__author-image {
+      min-width: 22vw;
+      height: 22vw;
+      margin-bottom: 1rem;
+    }
+
+    &__products-wrapper {
+      .photo-page__product {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+
+    &__product-image {
+      width: 22vw;
+      height: 22vw;
+      min-width: 22vw;
+      min-height: 22vw;
+      background-size: cover;
+      justify-self: center;
+      align-self: center;
+    }
+
+    &__product-text {
+      margin: auto 0 auto 1rem;
+    }
+
+    &__product-description {
+      font-size: 13px !important;
+      line-height: 20px;
+      text-align: left;
+    }
+
+    &__contact-link {
+      font-size: 1.4rem;
+      line-height: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: $small) and (orientation: landscape){
+
+  .photo-page {
+
+    &__author-info {
+      bottom: 5%;
+      width: 88%;
+    }
+
+    &__author-story{
+      font-size: 12px !important;
+      line-height: 16px !important;
+    }
+
+    &__author-story,
+    &__text {
+      text-align: left;
+    }
+
+    &__info-wrapper {
+      margin-left: 1rem;
+    }
+
+    &__author-image {
+      min-width: 20vw;
+      height: 20vw;
+      margin-bottom: 1rem;
+    }
+
+    &__products-wrapper {
+
+      margin: 3rem auto;
+      .photo-page__product {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+
+    &__product-text {
+      margin: auto 0 auto 1rem;
+    }
+
+    &__product-description {
+      font-size: 13px !important;
+      line-height: 16px !important;
+      text-align: left;
+    }
+
+    &__contact-link {
+      font-size: 1.3rem;
+      line-height: 25px;
+    }
+  }
+}
+
+@media screen and (max-width: $xsmall) and (orientation: portrait){
+
+  .photo-page {
+
+    &__author-info {
+      flex-direction: column;
+      bottom: 5%;
+      left: 8%;
+      margin: 0 auto;
+    }
+
+    &__info-wrapper {
+      margin-left: 0;
+    }
+
+    &__author-image {
+      min-width: 30vw;
+      height: 30vw;
+      margin-bottom: 1rem;
+    }
+
+    &__products-wrapper {
+      .photo-page__product {
+        flex-direction: column;
+        margin-bottom: 1rem;
+        &:nth-of-type(1) {
+          .photo-page__product-image {
+            background-position: top center;
+          }
+        }
+
+        &:nth-of-type(2) {
+          .photo-page__product-image {
+            background-position: center;
+          }
+        }
+
+        &:nth-of-type(3) {
+          .photo-page__product-image {
+            background-position: center bottom;
+          }
+        }
+
+        &:nth-of-type(4) {
+          .photo-page__product-image {
+            background-position: center bottom;
+          }
+        }
+      }
+    }
+
+    &__product-image {
+      width: 100%;
+      height: 40vw;
+      min-width: 22vw;
+      min-height: 22vw;
+      background-size: cover;
+      justify-self: center;
+      align-self: center;
+    }
+
+
+    &__product-text {
+      margin: 2rem 0;
+    }
+
+    &__product-description {
+      width: 100%;
+      font-size: 13px !important;
+      line-height: 20px;
+      text-align: left;
+    }
+
+    &__contact-wrapper {
+      flex-direction: column;
+      margin: 1rem auto;
+    }
+
+    &__logo {
+      flex-direction: column;
+      width: 100%;
+    }
+
+    &__image {
+      width: 100%;
+      align-self: center;
+    }
+
+    &__contact {
+      width: 100%;
+      margin-top: 3rem;
+    }
+
+    &__icon {
+      margin-right: 1rem;
+    }
+
+    &__contact-link {
+      font-size: 1.4rem;
+      line-height: 22px;
+      color: $bright-font-color;
+    }
+  }
 }

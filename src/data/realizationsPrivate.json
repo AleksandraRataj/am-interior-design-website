@@ -128,14 +128,6 @@
     "bannerImage": "/images/realizationsPrivate/04_Mieszkanie w Krakowie - Fabryczna/01_strona.jpg",
     "images": [
       {"id": 0, "path": "/images/realizationsPrivate/04_Mieszkanie w Krakowie - Fabryczna/01_strona.jpg"},
-      {"id": 1,"path": "/images/realizationsPrivate/04_Mieszkanie w Krakowie - Fabryczna/02.jpg"},
-      {"id": 2,"path": "/images/realizationsPrivate/04_Mieszkanie w Krakowie - Fabryczna/03.jpg"},
-      {"id": 3,"path": "/images/realizationsPrivate/04_Mieszkanie w Krakowie - Fabryczna/04.jpg"},
-      {"id": 4,"path": "/images/realizationsPrivate/04_Mieszkanie w Krakowie - Fabryczna/05.jpg"},
-      {"id": 5,"path": "/images/realizationsPrivate/04_Mieszkanie w Krakowie - Fabryczna/06.jpg"},
-      {"id": 6,"path": "/images/realizationsPrivate/04_Mieszkanie w Krakowie - Fabryczna/07.jpg"},
-      {"id": 7,"path": "/images/realizationsPrivate/04_Mieszkanie w Krakowie - Fabryczna/08.jpg"},
-      {"id": 8,"path": "/images/realizationsPrivate/04_Mieszkanie w Krakowie - Fabryczna/09.jpg"},
       {"id": 9,"path": "/images/realizationsPrivate/04_Mieszkanie w Krakowie - Fabryczna/10.jpg"},
       {"id": 10,"path": "/images/realizationsPrivate/04_Mieszkanie w Krakowie - Fabryczna/11.jpg"},
       {"id": 11,"path": "/images/realizationsPrivate/04_Mieszkanie w Krakowie - Fabryczna/12.jpg"},
@@ -164,13 +156,6 @@
     "bannerImage": "/images/realizationsPrivate/05_Mieszkanie w Krakowie - Meiera/01_strona.jpg",
     "images": [
       {"id": 0, "path": "/images/realizationsPrivate/05_Mieszkanie w Krakowie - Meiera/01_strona.jpg"},
-      {"id": 1,"path": "/images/realizationsPrivate/05_Mieszkanie w Krakowie - Meiera/02.jpg"},
-      {"id": 2,"path": "/images/realizationsPrivate/05_Mieszkanie w Krakowie - Meiera/03.jpg"},
-      {"id": 3,"path": "/images/realizationsPrivate/05_Mieszkanie w Krakowie - Meiera/04.jpg"},
-      {"id": 5,"path": "/images/realizationsPrivate/05_Mieszkanie w Krakowie - Meiera/06.jpg"},
-      {"id": 6,"path": "/images/realizationsPrivate/05_Mieszkanie w Krakowie - Meiera/07.jpg"},
-      {"id": 7,"path": "/images/realizationsPrivate/05_Mieszkanie w Krakowie - Meiera/08.jpg"},
-      {"id": 8,"path": "/images/realizationsPrivate/05_Mieszkanie w Krakowie - Meiera/09.jpg"},
       {"id": 9,"path": "/images/realizationsPrivate/05_Mieszkanie w Krakowie - Meiera/10.jpg"},
       {"id": 10,"path": "/images/realizationsPrivate/05_Mieszkanie w Krakowie - Meiera/11.jpg"},
       {"id": 11,"path": "/images/realizationsPrivate/05_Mieszkanie w Krakowie - Meiera/12.jpg"},
@@ -383,16 +368,7 @@
       {"id": 11,"path": "/images/realizationsPrivate/11_Mieszkanie w Warszawie - Ochota/12.jpg"},
       {"id": 12,"path": "/images/realizationsPrivate/11_Mieszkanie w Warszawie - Ochota/13.jpg"},
       {"id": 13,"path": "/images/realizationsPrivate/11_Mieszkanie w Warszawie - Ochota/14.jpg"},
-      {"id": 14,"path": "/images/realizationsPrivate/11_Mieszkanie w Warszawie - Ochota/15.jpg"},
-      {"id": 15,"path": "/images/realizationsPrivate/11_Mieszkanie w Warszawie - Ochota/16.jpg"},
-      {"id": 16,"path": "/images/realizationsPrivate/11_Mieszkanie w Warszawie - Ochota/17.jpg"},
-      {"id": 17,"path": "/images/realizationsPrivate/11_Mieszkanie w Warszawie - Ochota/18.jpg"},
-      {"id": 18,"path": "/images/realizationsPrivate/11_Mieszkanie w Warszawie - Ochota/19.jpg"},
-      {"id": 19,"path": "/images/realizationsPrivate/11_Mieszkanie w Warszawie - Ochota/20.jpg"},
-      {"id": 20,"path": "/images/realizationsPrivate/11_Mieszkanie w Warszawie - Ochota/21.jpg"},
-      {"id": 21,"path": "/images/realizationsPrivate/11_Mieszkanie w Warszawie - Ochota/22.jpg"},
-      {"id": 22,"path": "/images/realizationsPrivate/11_Mieszkanie w Warszawie - Ochota/23.jpg"},
-      {"id": 23,"path": "/images/realizationsPrivate/11_Mieszkanie w Warszawie - Ochota/24.jpg"}
+      {"id": 14,"path": "/images/realizationsPrivate/11_Mieszkanie w Warszawie - Ochota/15.jpg"}
     ]
   }
 ]

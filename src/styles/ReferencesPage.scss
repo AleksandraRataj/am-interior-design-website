@@ -1,0 +1,101 @@
+@import "App.scss";
+
+.references-page{
+
+  &__wrapper {
+    @include padding-pages;
+  }
+
+  &__title {
+    margin-bottom: 3rem;
+  }
+
+&__references-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+  &__reference {
+    width: 35vw;
+    height: calc(35vw * 0.75);
+    margin-bottom: 2rem;
+  }
+
+}
+
+.ref1 {
+  background-image: url("/src/data/images/ref1.jpg");
+  background-size: cover;
+}
+
+.ref2 {
+  background-image: url("/src/data/images/ref2.jpg");
+  background-size: cover;
+}
+
+.ref3 {
+  background-image: url("/src/data/images/ref3.jpg");
+  background-size: cover;
+}
+
+.ref4 {
+  background-image: url("/src/data/images/ref4.jpg");
+  background-size: cover;
+}
+
+.ref5 {
+  background-image: url("/src/data/images/ref5.jpg");
+  background-size: cover;
+}
+
+.ref6 {
+  background-image: url("/src/data/images/ref6.jpg");
+  background-size: cover;
+}
+
+@media screen and (max-width: $xxlarge) {
+  .references-page{
+
+    &__reference {
+      width: 40vw;
+      height: calc(40vw * 0.75);
+      margin-bottom: 1rem;
+    }
+
+  }
+}
+
+@media screen and (max-width: $large) {
+  .references-page{
+
+    &__reference {
+      width: 43vw;
+      height: calc(43vw * 0.75);
+      margin-bottom: 1rem;
+    }
+
+  }
+}
+
+@media screen and (max-width: $medium) {
+  .references-page{
+
+    &__reference {
+      width: 80vw;
+      height: calc(80vw * 0.75);
+    }
+
+  }
+}
+
+@media screen and (max-width: $small) {
+  .references-page{
+
+    &__reference {
+      width: 70vw;
+      height: calc(70vw * 0.75);
+    }
+
+  }
+}

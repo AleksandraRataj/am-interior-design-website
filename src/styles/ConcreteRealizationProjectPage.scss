@@ -34,18 +34,18 @@
   }
 
   &__images-wrapper {
-    width: 90%;
+    width: 91%;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: center;
+    //justify-content: stretch;
+    //align-content: center;
   }
 
   &__one-image-wrapper{
     width: 26vw;
     height: calc(26vw * 0.66);
-    margin-bottom: 3rem;
+    margin: 10px auto;
     cursor: pointer;
     transition: .2s;
   }

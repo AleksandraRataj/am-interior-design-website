@@ -13,10 +13,6 @@ import Arrow from "./Arrow";
 
 const ConcreteRealizationProject = ({match, type}) => {
 
-    useLayoutEffect(() => {
-        window.scrollTo(0, 0)
-    });
-
     let datasource = [];
 
     if(type === "RPublic") {
@@ -28,7 +24,7 @@ const ConcreteRealizationProject = ({match, type}) => {
     } else if (type === "PPrivate") {
         datasource = Data_PPrivate;
     } else {
-        datasource = null;
+        datasource = [];
     }
 
     const [selectedImage, setSelectedImage] = useState(null);
