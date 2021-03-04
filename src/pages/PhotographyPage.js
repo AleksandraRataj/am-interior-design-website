@@ -3,6 +3,7 @@ import Footer from "../layouts/Footer";
 
 import "../styles/PhotographyPage.css";
 import {motion} from "framer-motion";
+import Arrow from "../components/Arrow";
 
 
 const PhotographyPage = () => {
@@ -13,6 +14,7 @@ const PhotographyPage = () => {
             animate={{opacity: 1}}
             transition={{delay: 0.1}}
             className="photo-page">
+            <Arrow/>
             <div className="photo-page__background-wrapper">
 
                 <div className="photo-page__flex-wrapper">

@@ -22,8 +22,10 @@
   }
 
   &__icon-wrapper {
-    position: relative;
-    bottom: -13%;
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-50%);
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -31,8 +33,15 @@
   }
   &__icon {
     display: block;
-    font-size: 4rem;
+    font-size: 3.3rem;
     color: white;
     cursor: pointer;
+    transition: .2s;
+
+    &:hover {
+      color: $menu-color;
+    }
   }
 }
+
+

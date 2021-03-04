@@ -2,14 +2,19 @@ import React from "react";
 
 import "../styles/CooperationPage.css";
 import Footer from "../layouts/Footer";
+import {motion} from "framer-motion";
+import Arrow from "../components/Arrow";
 
 const CooperationPage = () => {
 
     return (
         <div>
-
-
-            <div className="cooperation-page">
+            <motion.div
+                initial={{opacity: 0}}
+                animate={{opacity: 1}}
+                transition={{delay: 0.2}}
+                className="cooperation-page">
+                <Arrow/>
                 <h1 className="cooperation-page__title page-title">Współpraca</h1>
 
                 <div className="cooperation-page__wrapper">
@@ -50,7 +55,7 @@ const CooperationPage = () => {
 
 
                 </div>
-            </div>
+            </motion.div>
             <Footer/>
         </div>
     );

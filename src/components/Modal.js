@@ -52,8 +52,8 @@ const Modal = (
             >
                 <img className="backdrop__image" src={selectedImage.path} alt=""/>
                 <div className="backdrop__icon-wrapper">
-                    <i className="backdrop__icon fas fa-arrow-circle-left" onClick={() => handleClickPrev()}/>
-                    <i className="backdrop__icon fas fa-arrow-circle-right" onClick={() => handleClickNext()}/>
+                    <i className="backdrop__icon fas fas fa-chevron-circle-left" onClick={() => handleClickPrev()}/>
+                    <i className="backdrop__icon fas fas fa-chevron-circle-right" onClick={() => handleClickNext()}/>
                 </div>
             </motion.div>
         </AnimatePresence>

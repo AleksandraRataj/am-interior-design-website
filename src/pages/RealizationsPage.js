@@ -3,12 +3,14 @@ import {NavLink} from "react-router-dom";
 import Footer from "../layouts/Footer";
 import {motion} from "framer-motion";
 import '../styles/RealizationsProjectsPages.css';
+import Arrow from "../components/Arrow";
 
 
 export const Realizations = () => {
 
     return (
         <div className="realizations-page">
+            <Arrow/>
             <div className="realizations-page__wrapper">
 
                 <h1 className="realizations-page__page-title page-title">realizacje</h1>

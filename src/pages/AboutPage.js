@@ -1,8 +1,9 @@
-import React, {useLayoutEffect} from "react";
+import React from "react";
 import Footer from "../layouts/Footer";
 
 import "../styles/AboutPage.css";
 import {motion} from "framer-motion";
+import Arrow from "../components/Arrow";
 
 const AboutPage = () => {
 
@@ -12,6 +13,7 @@ const AboutPage = () => {
             animate={{opacity: 1}}
             transition={{delay: 0.2}}
             className="about-page">
+            <Arrow/>
             <div className="about-page__wrapper">
                 <h1 className="about-page__title page-title">o nas</h1>
                 <div className="about-page__author-info">
