@@ -496,5 +496,11 @@ body {
     height: calc(70vw * 0.75);
   }
 }
+@media screen and (max-width: 460px) {
+  .references-page__reference {
+    width: 90vw;
+    height: calc(90vw * 0.75);
+  }
+}
 
 /*# sourceMappingURL=ReferencesPage.css.map */

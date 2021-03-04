@@ -10,15 +10,15 @@
     "designer": "Aleksandra Michalak",
     "visualizations": "Syntax Marcin Klimek",
 
-    "bannerImage": "/images/projectsPublic/01_Przestrzeń wspólna w apartamentowcu w Cyhrli/01_strona.jpg",
+    "bannerImage": "/images/projectsPublic/01_Przestrzen wspolna w apartamentowcu w Cyhrli/01_strona.jpg",
     "images": [
-      {"id": 0, "path": "/images/projectsPublic/01_Przestrzeń wspólna w apartamentowcu w Cyhrli/01_strona.jpg"},
-      {"id": 2,"path": "/images/projectsPublic/01_Przestrzeń wspólna w apartamentowcu w Cyhrli/02.jpg"},
-      {"id": 3,"path": "/images/projectsPublic/01_Przestrzeń wspólna w apartamentowcu w Cyhrli/03.jpg"},
-      {"id": 4,"path": "/images/projectsPublic/01_Przestrzeń wspólna w apartamentowcu w Cyhrli/04.jpg"},
-      {"id": 5,"path": "/images/projectsPublic/01_Przestrzeń wspólna w apartamentowcu w Cyhrli/05.jpg"},
-      {"id": 6,"path": "/images/projectsPublic/01_Przestrzeń wspólna w apartamentowcu w Cyhrli/06.jpg"},
-      {"id": 7,"path": "/images/projectsPublic/01_Przestrzeń wspólna w apartamentowcu w Cyhrli/07.jpg"}
+      {"id": 0, "path": "/images/projectsPublic/01_Przestrzen wspolna w apartamentowcu w Cyhrli/01_strona.jpg"},
+      {"id": 2,"path": "/images/projectsPublic/01_Przestrzen wspolna w apartamentowcu w Cyhrli/02.jpg"},
+      {"id": 3,"path": "/images/projectsPublic/01_Przestrzen wspolna w apartamentowcu w Cyhrli/03.jpg"},
+      {"id": 4,"path": "/images/projectsPublic/01_Przestrzen wspolna w apartamentowcu w Cyhrli/04.jpg"},
+      {"id": 5,"path": "/images/projectsPublic/01_Przestrzen wspolna w apartamentowcu w Cyhrli/05.jpg"},
+      {"id": 6,"path": "/images/projectsPublic/01_Przestrzen wspolna w apartamentowcu w Cyhrli/06.jpg"},
+      {"id": 7,"path": "/images/projectsPublic/01_Przestrzen wspolna w apartamentowcu w Cyhrli/07.jpg"}
     ]
   },
   {
@@ -102,7 +102,7 @@
     "yardage": "70",
     "style": "industrialny",
     "designer": "Aleksandra Michalak",
-    "visualizations": "Syntax Marcin Klimek ",
+    "visualizations": "Aleksandra Michalak",
 
     "bannerImage": "/images/projectsPublic/05_SPA w apartamentowcu w Cyhrli/01_strona.jpg",
     "images": [
@@ -167,13 +167,13 @@
     "designer": "Aleksandra Michalak",
     "visualizations": "Malmedia - Profesjonalne wizualizacje",
 
-    "bannerImage": "/images/projectsPublic/08_Pub w pensjonacie w Żmiącej/01_strona.jpg",
+    "bannerImage": "/images/projectsPublic/08_Pub w pensjonacie w Zmiacej/01_strona.jpg",
     "images": [
-      {"id": 0, "path": "/images/projectsPublic/08_Pub w pensjonacie w Żmiącej/01_strona.jpg"},
-      {"id": 1,"path": "/images/projectsPublic/08_Pub w pensjonacie w Żmiącej/1.jpg"},
-      {"id": 2,"path": "/images/projectsPublic/08_Pub w pensjonacie w Żmiącej/2.jpg"},
-      {"id": 3,"path": "/images/projectsPublic/08_Pub w pensjonacie w Żmiącej/4.jpg"},
-      {"id": 4,"path": "/images/projectsPublic/08_Pub w pensjonacie w Żmiącej/5.jpg"}
+      {"id": 0, "path": "/images/projectsPublic/08_Pub w pensjonacie w Zmiacej/01_strona.jpg"},
+      {"id": 1,"path": "/images/projectsPublic/08_Pub w pensjonacie w Zmiacej/1.jpg"},
+      {"id": 2,"path": "/images/projectsPublic/08_Pub w pensjonacie w Zmiacej/2.jpg"},
+      {"id": 3,"path": "/images/projectsPublic/08_Pub w pensjonacie w Zmiacej/4.jpg"},
+      {"id": 4,"path": "/images/projectsPublic/08_Pub w pensjonacie w Zmiacej/5.jpg"}
     ]
   }
 ]

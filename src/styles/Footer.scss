@@ -333,5 +333,17 @@
       line-height: 30px;
     }
 
+    &__copyright-text {
+      font-size: 10px !important;
+    }
+  }
+}
+
+@media screen and (max-width: $small){
+  .footer {
+
+    &__copyright-text {
+      font-size: 9px !important;
+    }
   }
 }

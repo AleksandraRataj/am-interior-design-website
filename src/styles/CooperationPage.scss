@@ -78,3 +78,35 @@
 
   }
 }
+
+@media screen and (max-width: $small){
+  .cooperation-page {
+
+    @include padding-pages;
+
+    &__item-wrapper {
+      margin: 0 auto;
+      width: 40vw;
+      height: 20vw;
+    }
+
+    &__link {
+      width: fit-content;
+      height: fit-content;
+      justify-self: center;
+      align-self: center;
+      transition: .2s;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    &__image {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+  }
+}

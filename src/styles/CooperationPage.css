@@ -532,5 +532,76 @@ body {
     object-fit: contain;
   }
 }
+@media screen and (max-width: 640px) {
+  .cooperation-page {
+    padding: 80px 100px 20px 100px;
+  }
+}
+@media screen and (max-width: 640px) and (max-width: 1920px) and (orientation: landscape) {
+  .cooperation-page {
+    padding: 80px 80px 20px 80px;
+  }
+}
+@media screen and (max-width: 640px) and (max-width: 1600px) {
+  .cooperation-page {
+    padding: 70px 80px 20px 80px;
+  }
+}
+@media screen and (max-width: 640px) and (max-width: 1200px) {
+  .cooperation-page {
+    padding: 60px 50px 20px 50px;
+  }
+}
+@media screen and (max-width: 640px) and (max-width: 1024px) and (orientation: portrait) {
+  .cooperation-page {
+    padding: 70px 50px 20px 50px;
+  }
+}
+@media screen and (max-width: 640px) and (max-width: 1024px) {
+  .cooperation-page {
+    padding: 40px 50px 20px 50px;
+  }
+}
+@media screen and (max-width: 640px) and (max-width: 823px) and (orientation: portrait) {
+  .cooperation-page {
+    padding: 50px 50px 30px 50px;
+  }
+}
+@media screen and (max-width: 640px) and (max-width: 640px) {
+  .cooperation-page {
+    padding: 40px 50px 30px 50px;
+  }
+}
+@media screen and (max-width: 640px) and (max-width: 460px) {
+  .cooperation-page {
+    padding: 40px 30px 20px 30px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .cooperation-page__item-wrapper {
+    margin: 0 auto;
+    width: 40vw;
+    height: 20vw;
+  }
+}
+@media screen and (max-width: 640px) {
+  .cooperation-page__link {
+    width: fit-content;
+    height: fit-content;
+    justify-self: center;
+    align-self: center;
+    transition: 0.2s;
+  }
+  .cooperation-page__link:hover {
+    transform: scale(1.1);
+  }
+}
+@media screen and (max-width: 640px) {
+  .cooperation-page__image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
 
 /*# sourceMappingURL=CooperationPage.css.map */

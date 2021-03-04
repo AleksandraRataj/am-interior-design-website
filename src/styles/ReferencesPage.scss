@@ -99,3 +99,14 @@
 
   }
 }
+
+@media screen and (max-width: $xsmall) {
+  .references-page{
+
+    &__reference {
+      width: 90vw;
+      height: calc(90vw * 0.75);
+    }
+
+  }
+}

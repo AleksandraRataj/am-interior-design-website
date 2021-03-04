@@ -1,5 +1,5 @@
 import React from "react"
-import {BrowserRouter} from "react-router-dom";
+import {BrowserRouter, HashRouter} from "react-router-dom";
 
 import Navigation from "./Navigation";
 import Page from "./Page";
@@ -7,6 +7,7 @@ import Page from "./Page";
 function App() {
     return (
         <BrowserRouter>
+            <HashRouter>
             <div className="App">
                 <main>
                     <Navigation/>
@@ -15,6 +16,7 @@ function App() {
                     </section>
                 </main>
             </div>
+            </HashRouter>
         </BrowserRouter>
     );
 }
