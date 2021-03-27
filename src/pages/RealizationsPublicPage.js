@@ -17,7 +17,9 @@ const RealizationsPublicPage = () => {
             key={item.id}
         >
             <div className="realizations-public-page__wrapper-element-image">
-                <img className="realizations-public-page__element-image" src={item.bannerImage} alt=""/>
+                <Link to={`/realizacje-wnetrza-publiczne/${item.id}`}>
+                    <img className="realizations-public-page__element-image" src={item.bannerImage} alt=""/>
+                </Link>
             </div>
 
 

@@ -1,6 +1,21 @@
-# 
+# http://aleksandramichalak.pl/
 
+The website was created for an interior designer.
 
+To write the application, I used:
+- React,
+- React Router,
+- framer-motion.
+
+## Screenshoots
+
+![](./public/images/screens/1.png)
+
+![](./public/images/screens/3.png)
+
+![](./public/images/screens/4.png)
+
+![](./public/images/screens/2.png)
 
 ## Getting Started with Create React App
 
